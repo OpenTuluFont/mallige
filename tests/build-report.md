@@ -1,0 +1,1529 @@
+# build_tutg report
+
+- new glyphs: u113D0, u113D5
+- cmap retargeted to keyboard glyphs: 43 (11392->k 11393->K 11394->g 11395->G 11396->Z 11397->c 11398->C 11399->j 1139B->z 1139C->q 1139D->Q 1139E->w 1139F->W 113A0->N 113A1->t 113A2->T 113A3->d 113A4->D 113A5->n 113A6->p 113A7->P 113A8->b 113A9->B 113AA->m 113AB->y 113AC->r 113AD->l 113AE->v 113AF->S 113B0->x 113B1->s 113B2->h 113B3->L 113B8->a 113BB->u 113BC->U 113BD->R 113CA->F 113CC->M 113CD->H 113CE->A 113D1->f 113D4->period)
+- keyboard ligature rules read: 1527
+- translated: 1461 flat rules, 17 repha rules, 49 keyboard-only rules skipped
+- repha: 8 abvs rules, 8 blws rules, 1 unresolved
+- version set to 1.500
+- saved XmlAlieg(mallige)v1.5.ttf: 1793 glyphs
+
+## Keyboard-only rules skipped
+
+- `period period period` -> period_period_period
+- `A p A t u1` -> p_A_t_u1.under
+- `A c Ar` -> c_Ar.under
+- `A A` -> A_A
+- `A Y` -> A_Y
+- `A a` -> A_a
+- `A i` -> A_i
+- `E A a m A` -> E_A_a_m_A
+- `E A a` -> E_A_a
+- `E A` -> E_A
+- `I f` -> f_I
+- `M M` -> M_M
+- `O A` -> O_A
+- `R R` -> R_R
+- `V one zero zero zero` -> xxthousand
+- `V one zero zero` -> xxhundredxx
+- `V j A j` -> zza
+- `V l l X` -> V_l_l_X
+- `V one zero` -> xxtenxx
+- `V j U` -> zuu
+- `V j u` -> zu
+- `V l X` -> V_l_X
+- `V l l` -> V_l_l
+- `V period` -> V_period
+- `V zero` -> V_0
+- `V one` -> V_one
+- `V two` -> V_two
+- `V three` -> V_three
+- `V four` -> V_four
+- `V five` -> V_5
+- `V six` -> V_6
+- `V seven` -> V_7
+- `V eight` -> V_8
+- `V nine` -> V_9
+- `V P` -> fa
+- `V Z` -> xxzhaxx
+- `V j` -> za
+- `V l` -> V_l
+- `V r` -> xxrhaxx
+- `V s` -> sza
+- `e A a` -> e_A_a
+- `e e A` -> e_e_A
+- `e A` -> e_A
+- `e e` -> e_e
+- `f i` -> fi
+- `i f` -> fi
+- `k V l X` -> k_V_l_X
+- `o A` -> o_A
+- `p A t u1` -> p_A_t_u1
+
+## Repha rules not resolved
+
+- `f u113BA` -> f_I
+
+## Flat rules (Unicode input -> glyph)
+
+- `u113D0 B` -> A_B
+- `u113D0 C` -> A_C
+- `u113D0 D` -> A_D
+- `u113D0 D U` -> A_D_U
+- `u113D0 u113D0 D U` -> A_D_U.under
+- `u113D0 D u` -> A_D_u
+- `u113D0 u113D0 D u` -> A_D_u.under
+- `u113D0 G` -> A_G
+- `u113D0 G U` -> A_G_U
+- `u113D0 u113D0 G U` -> A_G_U.under
+- `u113D0 G u` -> A_G_u
+- `u113D0 u113D0 G u` -> A_G_u.under
+- `u113D0 u113BA` -> A_I
+- `u113D0 u1139A` -> A_J
+- `u113D0 u1139A U` -> A_J_U
+- `u113D0 u1139A u` -> A_J_u
+- `u113D0 K` -> A_K
+- `u113D0 K U` -> A_K_U
+- `u113D0 K u` -> A_K_u
+- `u113D0 L` -> A_L
+- `u113D0 L U` -> A_L_U
+- `u113D0 u113D0 L U` -> A_L_U.under
+- `u113D0 L u` -> A_L_u
+- `u113D0 u113D0 L u` -> A_L_u.under
+- `u113D0 N` -> A_N
+- `u113D0 P` -> A_P
+- `u113D0 P U` -> A_P_U
+- `u113D0 u113D0 P U` -> A_P_U.under
+- `u113D0 P u` -> A_P_u
+- `u113D0 u113D0 P u` -> A_P_u.under
+- `u113D0 Q` -> A_Q
+- `u113D0 Q U` -> A_Q_U
+- `u113D0 u113D0 Q U` -> A_Q_U.under
+- `u113D0 Q u` -> A_Q_u
+- `u113D0 u113D0 Q u` -> A_Q_u.under
+- `u113D0 R` -> A_R
+- `u113D0 R R` -> A_R_R
+- `u113D0 S` -> A_S
+- `u113D0 T` -> A_T
+- `u113D0 T U` -> A_T_U
+- `u113D0 u113D0 T U` -> A_T_U.under
+- `u113D0 T u` -> A_T_u
+- `u113D0 u113D0 T u` -> A_T_u.under
+- `u113D0 U` -> A_U
+- `u113D0 W` -> A_W
+- `u113D0 W U` -> A_W_U
+- `u113D0 u113D0 W U` -> A_W_U.under
+- `u113D0 W u` -> A_W_u
+- `u113D0 u113D0 W u` -> A_W_u.under
+- `u113D0 Z` -> A_Z
+- `u113D0 Z U` -> A_Z_U
+- `u113D0 u113D0 Z U` -> A_Z_U.under
+- `u113D0 Z u` -> A_Z_u
+- `u113D0 u113D0 Z u` -> A_Z_u.under
+- `u113D0 b` -> A_b
+- `u113D0 b U` -> A_b_U
+- `u113D0 u113D0 b U` -> A_b_U.under
+- `u113D0 b u` -> A_b_u
+- `u113D0 u113D0 b u` -> A_b_u.under
+- `u113D0 c` -> A_c
+- `u113D0 c U` -> A_c_U
+- `u113D0 u113D0 c U` -> A_c_U.under
+- `u113D0 c u` -> A_c_u
+- `u113D0 u113D0 c u` -> A_c_u.under
+- `u113D0 d` -> A_d
+- `u113D0 g` -> A_g
+- `u113D0 h` -> A_h
+- `u113D0 j` -> A_j
+- `u113D0 k` -> A_k
+- `u113D0 l` -> A_l
+- `u113D0 l U` -> A_l_U
+- `u113D0 u113D0 l U` -> A_l_U.under
+- `u113D0 l u` -> A_l_u
+- `u113D0 u113D0 l u` -> A_l_u.under
+- `u113D0 m` -> A_m
+- `u113D0 m U` -> A_m_U
+- `u113D0 u113D0 m U` -> A_m_U.under
+- `u113D0 m u` -> A_m_u
+- `u113D0 u113D0 m u` -> A_m_u.under
+- `u113D0 n` -> A_n
+- `u113D0 p` -> A_p
+- `u113D0 p U` -> A_p_U
+- `u113D0 u113D0 p U` -> A_p_U.under
+- `u113D0 p u` -> A_p_u
+- `u113D0 u113D0 p u` -> A_p_u.under
+- `u113D0 q` -> A_q
+- `u113D0 r` -> A_r
+- `u113D0 r U` -> A_r_U
+- `u113D0 u113D0 r U` -> A_r_U.under
+- `u113D0 r u` -> A_r_u
+- `u113D0 u113D0 r u` -> A_r_u.under
+- `u113D0 s` -> A_s
+- `u113D0 s U` -> A_s_U
+- `u113D0 u113D0 s U` -> A_s_U.under
+- `u113D0 s u` -> A_s_u
+- `u113D0 u113D0 s u` -> A_s_u.under
+- `u113D0 t` -> A_t
+- `u113D0 u` -> A_u
+- `u113D0 v` -> A_v
+- `u113D0 v U` -> A_v_U
+- `u113D0 u113D0 v U` -> A_v_U.under
+- `u113D0 v u` -> A_v_u
+- `u113D0 u113D0 v u` -> A_v_u.under
+- `u113D0 w` -> A_w
+- `u113D0 w U` -> A_w_U
+- `u113D0 u113D0 w U` -> A_w_U.under
+- `u113D0 w u` -> A_w_u
+- `u113D0 u113D0 w u` -> A_w_u.under
+- `u113D0 x` -> A_x
+- `u113D0 y` -> A_y
+- `u113D0 y U` -> A_y_U
+- `u113D0 u113D0 y U` -> A_y_U.under
+- `u113D0 y u` -> A_y_u
+- `u113D0 u113D0 y u` -> A_y_u.under
+- `u113D0 z` -> A_z
+- `u113D0 z U` -> A_z_U
+- `u113D0 u113D0 z U` -> A_z_U.under
+- `u113D0 z u` -> A_z_u
+- `u113D0 u113D0 z u` -> A_z_u.under
+- `B u113D0 n` -> B_A_n
+- `u113D0 B u113D0 n` -> B_A_n.under
+- `B u113D0 n U` -> B_A_n_U
+- `B u113D0 n u` -> B_A_n_u
+- `u113D0 B u113D0 n u` -> B_A_n_u.under
+- `B u113D0 y` -> B_A_y
+- `u113D0 B u113D0 y` -> B_A_y.under
+- `B u113D0 y U` -> B_A_y_U
+- `u113D0 B u113D0 y U` -> B_A_y_U.under
+- `B u113D0 y u` -> B_A_y_u
+- `u113D0 B u113D0 y u` -> B_A_y_u.under
+- `B R` -> B_R
+- `u113D0 B R` -> B_R.under
+- `B R R` -> B_R_R
+- `B U` -> B_U
+- `u113D0 B U` -> B_U.under
+- `B u` -> B_u
+- `u113D0 B u` -> B_u.under
+- `C u113D0 r` -> C_A_r
+- `u113D0 C u113D0 r` -> C_A_r.under
+- `C u113D0 r U` -> C_A_r_U
+- `C u113D0 r u` -> C_A_r_u
+- `u113D0 C u113D0 r u` -> C_A_r_u.under
+- `C u113D0 y` -> C_A_y
+- `u113D0 C u113D0 y` -> C_A_y.under
+- `C u113D0 y U` -> C_A_y_U
+- `u113D0 C u113D0 y U` -> C_A_y_U.under
+- `C u113D0 y u` -> C_A_y_u
+- `u113D0 C u113D0 y u` -> C_A_y_u.under
+- `C u113D0 z` -> C_A_z
+- `u113D0 C u113D0 z` -> C_A_z.under
+- `C u113D0 z U` -> C_A_z_U
+- `C u113D0 z u` -> C_A_z_u
+- `u113D0 C u113D0 z u` -> C_A_z_u.under
+- `C R` -> C_R
+- `u113D0 C R` -> C_R.under
+- `C R R` -> C_R_R
+- `C U` -> C_U
+- `u113D0 C U` -> C_U.under
+- `C u` -> C_u
+- `u113D0 C u` -> C_u.under
+- `D u113D0 m` -> D_A_m
+- `u113D0 D u113D0 m` -> D_A_m.under
+- `D u113D0 m U` -> D_A_m_U
+- `D u113D0 m u` -> D_A_m_u
+- `u113D0 D u113D0 m u` -> D_A_m_u.under
+- `D u113D0 r` -> D_A_r
+- `u113D0 D u113D0 r` -> D_A_r.under
+- `D u113D0 r U` -> D_A_r_U
+- `D u113D0 r u` -> D_A_r_u
+- `u113D0 D u113D0 r u` -> D_A_r_u.under
+- `D u113D0 v` -> D_A_v
+- `u113D0 D u113D0 v` -> D_A_v.under
+- `D u113D0 v U` -> D_A_v_U
+- `D u113D0 v u` -> D_A_v_u
+- `u113D0 D u113D0 v u` -> D_A_v_u.under
+- `D u113D0 y` -> D_A_y
+- `u113D0 D u113D0 y` -> D_A_y.under
+- `D u113D0 y U` -> D_A_y_U
+- `D u113D0 y u` -> D_A_y_u
+- `u113D0 D u113D0 y u` -> D_A_y_u.under
+- `G R` -> G_R
+- `u113D0 G R` -> G_R.under
+- `G R R` -> G_R_R
+- `K u113D0 K` -> K_A_K
+- `K u113D0 K U` -> K_A_K_U
+- `K u113D0 K u` -> K_A_K_u
+- `K u113D0 k` -> K_A_k
+- `u113D0 K u113D0 k` -> K_A_k.under
+- `K u113D0 k U` -> K_A_k_U
+- `K u113D0 k u` -> K_A_k_u
+- `K u113D0 m` -> K_A_m
+- `u113D0 K u113D0 m` -> K_A_m.under
+- `K u113D0 m U` -> K_A_m_U
+- `K u113D0 m u` -> K_A_m_u
+- `u113D0 K u113D0 m u` -> K_A_m_u.under
+- `K u113D0 n` -> K_A_n
+- `u113D0 K u113D0 n` -> K_A_n.under
+- `K u113D0 n U` -> K_A_n_U
+- `K u113D0 n u` -> K_A_n_u
+- `K u113D0 r` -> K_A_r
+- `u113D0 K u113D0 r` -> K_A_r.under
+- `K u113D0 r U` -> K_A_r_U
+- `K u113D0 r u` -> K_A_r_u
+- `u113D0 K u113D0 r u` -> K_A_r_u.under
+- `K u113D0 v` -> K_A_v
+- `u113D0 K u113D0 v` -> K_A_v.under
+- `K u113D0 v U` -> K_A_v_U
+- `K u113D0 v u` -> K_A_v_u
+- `u113D0 K u113D0 v u` -> K_A_v_u.under
+- `K u113D0 y` -> K_A_y
+- `u113D0 K u113D0 y` -> K_A_y.under
+- `K u113D0 y U` -> K_A_y_U
+- `K u113D0 y u` -> K_A_y_u
+- `u113D0 K u113D0 y u` -> K_A_y_u.under
+- `K R` -> K_R
+- `u113D0 K R` -> K_R.under
+- `K R R` -> K_R_R
+- `L u113D0 L` -> L_A_L
+- `u113D0 L u113D0 L` -> L_A_L.under
+- `L u113D0 v` -> L_A_v
+- `L u113D0 y` -> L_A_y
+- `u113D0 L u113D0 y` -> L_A_y.under
+- `L u113D0 y U` -> L_A_y_U
+- `u113D0 L u113D0 y U` -> L_A_y_U.under
+- `L u113D0 y u` -> L_A_y_u
+- `u113D0 L u113D0 y u` -> L_A_y_u.under
+- `N u113D0 L` -> N_A_L
+- `N u113D0 L U` -> N_A_L_U
+- `N u113D0 L u` -> N_A_L_u
+- `N u113D0 Q` -> N_A_Q
+- `N u113D0 W` -> N_A_W
+- `u113D0 N u113D0 W` -> N_A_W.under
+- `N A` -> N_A_X
+- `N u113D0 h` -> N_A_h
+- `u113D0 N u113D0 h` -> N_A_h.under
+- `N u113D0 h u113D0 v` -> N_A_h_A_v
+- `u113D0 N u113D0 h u113D0 v` -> N_A_h_A_v.under
+- `N u113D0 h u113D0 y` -> N_A_h_A_y
+- `u113D0 N u113D0 h u113D0 y` -> N_A_h_A_y.under
+- `N u113D0 h u113D0 y U` -> N_A_h_A_y_U
+- `N u113D0 h u113D0 y u` -> N_A_h_A_y_u
+- `u113D0 N u113D0 h u113D0 y u` -> N_A_h_A_y_u.under
+- `N u113D0 h U` -> N_A_h_U
+- `N u113D0 h u` -> N_A_h_u
+- `u113D0 N u113D0 h u` -> N_A_h_u.under
+- `N u113D0 j` -> N_A_j
+- `N u113D0 j U` -> N_A_j_U
+- `N u113D0 j u` -> N_A_j_u
+- `N u113D0 k` -> N_A_k
+- `N u113D0 k A` -> N_A_k_A_X
+- `N u113D0 k U` -> N_A_k_U
+- `N u113D0 k u` -> N_A_k_u
+- `N u113D0 m` -> N_A_m
+- `u113D0 N u113D0 m` -> N_A_m.under
+- `N u113D0 n` -> N_A_n
+- `u113D0 N u113D0 n` -> N_A_n.under
+- `N u113D0 n U` -> N_A_n_U
+- `u113D0 N u113D0 n U` -> N_A_n_U.under
+- `N u113D0 n u` -> N_A_n_u
+- `u113D0 N u113D0 n u` -> N_A_n_u.under
+- `N u113D0 q` -> N_A_q
+- `u113D0 N u113D0 q` -> N_A_q.under
+- `N u113D0 q A` -> N_A_q_A_X
+- `N u113D0 q u113D0 r` -> N_A_q_A_r
+- `u113D0 N u113D0 q u113D0 r` -> N_A_q_A_r.under
+- `N u113D0 q u113D0 r U` -> N_A_q_A_r_U
+- `N u113D0 q u113D0 r u` -> N_A_q_A_r_u
+- `u113D0 N u113D0 q u113D0 r u` -> N_A_q_A_r_u.under
+- `N u113D0 q u113D0 v` -> N_A_q_A_v
+- `u113D0 N u113D0 q u113D0 v` -> N_A_q_A_v.under
+- `N u113D0 q U` -> N_A_q_U
+- `u113D0 N u113D0 q U` -> N_A_q_U.under
+- `N u113D0 q u` -> N_A_q_u
+- `u113D0 N u113D0 q u` -> N_A_q_u.under
+- `N u113D0 r` -> N_A_r
+- `u113D0 N u113D0 r` -> N_A_r.under
+- `N u113D0 r U` -> N_A_r_U
+- `u113D0 N u113D0 r U` -> N_A_r_U.under
+- `N u113D0 r u` -> N_A_r_u
+- `u113D0 N u113D0 r u` -> N_A_r_u.under
+- `N u113D0 t` -> N_A_t
+- `u113D0 N u113D0 t` -> N_A_t.under
+- `N u113D0 t A` -> N_A_t_A_X
+- `N u113D0 t u113D0 n` -> N_A_t_A_n
+- `u113D0 N u113D0 t u113D0 n` -> N_A_t_A_n.under
+- `N u113D0 t u113D0 n A` -> N_A_t_A_n_A_X
+- `N u113D0 t u113D0 n U` -> N_A_t_A_n_U
+- `u113D0 N u113D0 t u113D0 n U` -> N_A_t_A_n_U.under
+- `N u113D0 t u113D0 n u` -> N_A_t_A_n_u
+- `u113D0 N u113D0 t u113D0 n u` -> N_A_t_A_n_u.under
+- `N u113D0 t u113D0 r` -> N_A_t_A_r
+- `u113D0 N u113D0 t u113D0 r` -> N_A_t_A_r.under
+- `N u113D0 t u113D0 r U` -> N_A_t_A_r_U
+- `u113D0 N u113D0 t u113D0 r U` -> N_A_t_A_r_U.under
+- `N u113D0 t u113D0 r u` -> N_A_t_A_r_u
+- `u113D0 N u113D0 t u113D0 r u` -> N_A_t_A_r_u.under
+- `N u113D0 t U` -> N_A_t_U
+- `u113D0 N u113D0 t U` -> N_A_t_U.under
+- `N u113D0 t u` -> N_A_t_u
+- `u113D0 N u113D0 t u` -> N_A_t_u.under
+- `N u113D0 w` -> N_A_w
+- `u113D0 N u113D0 w` -> N_A_w.under
+- `N u113D0 w u113D0 y` -> N_A_w_A_y
+- `u113D0 N u113D0 w u113D0 y` -> N_A_w_A_y.under
+- `N u113D0 w u113D0 y U` -> N_A_w_A_y_U
+- `N u113D0 w u113D0 y u` -> N_A_w_A_y_u
+- `u113D0 N u113D0 w u113D0 y u` -> N_A_w_A_y_u.under
+- `N u113D0 y` -> N_A_y
+- `u113D0 N u113D0 y` -> N_A_y.under
+- `N u113D0 y U` -> N_A_y_U
+- `u113D0 N u113D0 y U` -> N_A_y_U.under
+- `N u113D0 y u` -> N_A_y_u
+- `u113D0 N u113D0 y u` -> N_A_y_u.under
+- `N U` -> N_U
+- `u113D0 N U` -> N_U.under
+- `N u` -> N_u
+- `u113D0 N u` -> N_u.under
+- `P u113D0 r` -> P_A_r
+- `u113D0 P u113D0 r` -> P_A_r.under
+- `P u113D0 r U` -> P_A_r_U
+- `P u113D0 r u` -> P_A_r_u
+- `u113D0 P u113D0 r u` -> P_A_r_u.under
+- `P u113D0 v` -> P_A_v
+- `u113D0 P u113D0 v` -> P_A_v.under
+- `P u113D0 v U` -> P_A_v_U
+- `P u113D0 v u` -> P_A_v_u
+- `u113D0 P u113D0 v u` -> P_A_v_u.under
+- `P u113D0 y` -> P_A_y
+- `u113D0 P u113D0 y` -> P_A_y.under
+- `P u113D0 y U` -> P_A_y_U
+- `P u113D0 y u` -> P_A_y_u
+- `u113D0 P u113D0 y u` -> P_A_y_u.under
+- `S u113D0 C` -> S_A_C
+- `u113D0 S u113D0 C` -> S_A_C.under
+- `S u113D0 C U` -> S_A_C_U
+- `S u113D0 C u` -> S_A_C_u
+- `u113D0 S u113D0 C u` -> S_A_C_u.under
+- `S u113D0 Q` -> S_A_Q
+- `u113D0 S u113D0 Q` -> S_A_Q.under
+- `S u113D0 Q U` -> S_A_Q_U
+- `S u113D0 Q u` -> S_A_Q_u
+- `S u113D0 c` -> S_A_c
+- `u113D0 S u113D0 c` -> S_A_c.under
+- `S u113D0 c U` -> S_A_c_U
+- `u113D0 S u113D0 c U` -> S_A_c_U.under
+- `S u113D0 c u` -> S_A_c_u
+- `u113D0 S u113D0 c u` -> S_A_c_u.under
+- `S u113D0 m` -> S_A_m
+- `u113D0 S u113D0 m` -> S_A_m.under
+- `S u113D0 m U` -> S_A_m_U
+- `S u113D0 m u` -> S_A_m_u
+- `u113D0 S u113D0 m u` -> S_A_m_u.under
+- `S u113D0 n` -> S_A_n
+- `u113D0 S u113D0 n` -> S_A_n.under
+- `S u113D0 n U` -> S_A_n_U
+- `S u113D0 n u` -> S_A_n_u
+- `u113D0 S u113D0 n u` -> S_A_n_u.under
+- `S u113D0 r` -> S_A_r
+- `u113D0 S u113D0 r` -> S_A_r.under
+- `S u113D0 r u113BA` -> S_A_r_I
+- `S u113D0 r U` -> S_A_r_U
+- `u113D0 S u113D0 r U` -> S_A_r_U.under
+- `S u113D0 r u` -> S_A_r_u
+- `u113D0 S u113D0 r u` -> S_A_r_u.under
+- `S u113D0 v` -> S_A_v
+- `u113D0 S u113D0 v` -> S_A_v.under
+- `S u113D0 y` -> S_A_y
+- `u113D0 S u113D0 y` -> S_A_y.under
+- `S u113D0 y U` -> S_A_y_U
+- `u113D0 S u113D0 y U` -> S_A_y_U.under
+- `S u113D0 y u` -> S_A_y_u
+- `u113D0 S u113D0 y u` -> S_A_y_u.under
+- `S R` -> S_R
+- `u113D0 S R` -> S_R.under
+- `S U` -> S_U
+- `u113D0 S U` -> S_U.under
+- `S u` -> S_u
+- `u113D0 S u` -> S_u.under
+- `T u113D0 m` -> T_A_m
+- `u113D0 T u113D0 m` -> T_A_m.under
+- `T u113D0 m U` -> T_A_m_U
+- `T u113D0 m u` -> T_A_m_u
+- `u113D0 T u113D0 m u` -> T_A_m_u.under
+- `T u113D0 r` -> T_A_r
+- `u113D0 T u113D0 r` -> T_A_r.under
+- `T u113D0 r U` -> T_A_r_U
+- `T u113D0 r u` -> T_A_r_u
+- `u113D0 T u113D0 r u` -> T_A_r_u.under
+- `T u113D0 v` -> T_A_v
+- `u113D0 T u113D0 v` -> T_A_v.under
+- `T u113D0 v U` -> T_A_v_U
+- `T u113D0 v u` -> T_A_v_u
+- `u113D0 T u113D0 v u` -> T_A_v_u.under
+- `T u113D0 y` -> T_A_y
+- `u113D0 T u113D0 y` -> T_A_y.under
+- `T u113D0 y U` -> T_A_y_U
+- `T u113D0 y u` -> T_A_y_u
+- `u113D0 T u113D0 y u` -> T_A_y_u.under
+- `W u113D0 y` -> W_A_y
+- `u113D0 W u113D0 y` -> W_A_y.under
+- `W u113D0 y U` -> W_A_y_U
+- `W u113D0 y u` -> W_A_y_u
+- `u113D0 W u113D0 y u` -> W_A_y_u.under
+- `Z u113D0 g` -> Z_A_g
+- `Z u113D0 g R` -> Z_A_g_R
+- `Z u113D0 g U` -> Z_A_g_U
+- `Z u113D0 g u` -> Z_A_g_u
+- `Z u113D0 k` -> Z_A_k
+- `u113D0 Z u113D0 k` -> Z_A_k.under
+- `Z u113D0 k u113D0 L` -> Z_A_k_A_L
+- `Z u113D0 k u113D0 L U` -> Z_A_k_A_L_U
+- `Z u113D0 k u113D0 L u` -> Z_A_k_A_L_u
+- `Z u113D0 k A` -> Z_A_k_A_X
+- `Z u113D0 k u113D0 k` -> Z_A_k_A_k
+- `u113D0 Z u113D0 k u113D0 k` -> Z_A_k_A_k.under
+- `Z u113D0 k u113D0 k U` -> Z_A_k_A_k_U
+- `Z u113D0 k u113D0 k u` -> Z_A_k_A_k_u
+- `u113D0 Z u113D0 k u113D0 k u` -> Z_A_k_A_k_u.under
+- `Z u113D0 k u113D0 r` -> Z_A_k_A_r
+- `u113D0 Z u113D0 k u113D0 r` -> Z_A_k_A_r.under
+- `Z u113D0 k u113D0 r U` -> Z_A_k_A_r_U
+- `Z u113D0 k u113D0 r u` -> Z_A_k_A_r_u
+- `u113D0 Z u113D0 k u113D0 r u` -> Z_A_k_A_r_u.under
+- `Z u113D0 k u113D0 t` -> Z_A_k_A_t
+- `u113D0 Z u113D0 k u113D0 t` -> Z_A_k_A_t.under
+- `Z u113D0 k u113D0 t u113D0 y` -> Z_A_k_A_t_A_y
+- `u113D0 Z u113D0 k u113D0 t u113D0 y` -> Z_A_k_A_t_A_y.under
+- `Z u113D0 k u113D0 t u113D0 y U` -> Z_A_k_A_t_A_y_U
+- `Z u113D0 k u113D0 t u113D0 y u` -> Z_A_k_A_t_A_y_u
+- `u113D0 Z u113D0 k u113D0 t u113D0 y u` -> Z_A_k_A_t_A_y_u.under
+- `Z u113D0 k u113D0 t U` -> Z_A_k_A_t_U
+- `Z u113D0 k u113D0 t u` -> Z_A_k_A_t_u
+- `u113D0 Z u113D0 k u113D0 t u` -> Z_A_k_A_t_u.under
+- `Z u113D0 k u113D0 x` -> Z_A_k_A_x
+- `u113D0 Z u113D0 k u113D0 x` -> Z_A_k_A_x.under
+- `Z u113D0 k u113D0 x u113D0 y` -> Z_A_k_A_x_A_y
+- `u113D0 Z u113D0 k u113D0 x u113D0 y` -> Z_A_k_A_x_A_y.under
+- `Z u113D0 k u113D0 x u113D0 y U` -> Z_A_k_A_x_A_y_U
+- `Z u113D0 k u113D0 x u113D0 y u` -> Z_A_k_A_x_A_y_u
+- `u113D0 Z u113D0 k u113D0 x u113D0 y u` -> Z_A_k_A_x_A_y_u.under
+- `Z u113D0 k u113D0 y` -> Z_A_k_A_y
+- `u113D0 Z u113D0 k u113D0 y` -> Z_A_k_A_y.under
+- `Z u113D0 k u113D0 y U` -> Z_A_k_A_y_U
+- `Z u113D0 k u113D0 y u` -> Z_A_k_A_y_u
+- `u113D0 Z u113D0 k u113D0 y u` -> Z_A_k_A_y_u.under
+- `Z u113D0 k U` -> Z_A_k_U
+- `u113D0 Z u113D0 k U` -> Z_A_k_U.under
+- `Z u113D0 k u` -> Z_A_k_u
+- `u113D0 Z u113D0 k u` -> Z_A_k_u.under
+- `Z u113D0 y` -> Z_A_y
+- `u113D0 Z u113D0 y` -> Z_A_y.under
+- `Z u113D0 y U` -> Z_A_y_U
+- `Z u113D0 y u` -> Z_A_y_u
+- `u113D0 Z u113D0 y u` -> Z_A_y_u.under
+- `b u113D0 b` -> b_A_b
+- `u113D0 b u113D0 b` -> b_A_b.under
+- `b u113D0 b U` -> b_A_b_U
+- `u113D0 b u113D0 b U` -> b_A_b_U.under
+- `b u113D0 b u` -> b_A_b_u
+- `u113D0 b u113D0 b u` -> b_A_b_u.under
+- `b u113D0 d` -> b_A_d
+- `u113D0 b u113D0 d` -> b_A_d.under
+- `b u113D0 d U` -> b_A_d_U
+- `b u113D0 d u` -> b_A_d_u
+- `b u113D0 r` -> b_A_r
+- `u113D0 b u113D0 r` -> b_A_r.under
+- `b u113D0 r U` -> b_A_r_U
+- `u113D0 b u113D0 r U` -> b_A_r_U.under
+- `b u113D0 r u` -> b_A_r_u
+- `u113D0 b u113D0 r u` -> b_A_r_u.under
+- `b u113D0 y` -> b_A_y
+- `u113D0 b u113D0 y` -> b_A_y.under
+- `b u113D0 y U` -> b_A_y_U
+- `u113D0 b u113D0 y U` -> b_A_y_U.under
+- `b u113D0 y u` -> b_A_y_u
+- `u113D0 b u113D0 y u` -> b_A_y_u.under
+- `b R` -> b_R
+- `u113D0 b R` -> b_R.under
+- `b R R` -> b_R_R
+- `c u113D0 C` -> c_A_C
+- `u113D0 c u113D0 C` -> c_A_C.under
+- `c u113D0 C U` -> c_A_C_U
+- `u113D0 c u113D0 C U` -> c_A_C_U.under
+- `c u113D0 C u` -> c_A_C_u
+- `u113D0 c u113D0 C u` -> c_A_C_u.under
+- `c u113D0 c` -> c_A_c
+- `u113D0 c u113D0 c` -> c_A_c.under
+- `c u113D0 c U` -> c_A_c_U
+- `u113D0 c u113D0 c U` -> c_A_c_U.under
+- `c u113D0 c u` -> c_A_c_u
+- `u113D0 c u113D0 c u` -> c_A_c_u.under
+- `c u113D0 r U` -> c_A_r_U
+- `u113D0 c u113D0 r U` -> c_A_r_U.under
+- `c u113D0 r u` -> c_A_r_u
+- `u113D0 c u113D0 r u` -> c_A_r_u.under
+- `c u113D0 y` -> c_A_y
+- `u113D0 c u113D0 y` -> c_A_y.under
+- `c u113D0 y U` -> c_A_y_U
+- `u113D0 c u113D0 y U` -> c_A_y_U.under
+- `c u113D0 y u` -> c_A_y_u
+- `u113D0 c u113D0 y u` -> c_A_y_u.under
+- `c R` -> c_R
+- `u113D0 c R` -> c_R.under
+- `c R R` -> c_R_R
+- `d u113D0 B` -> d_A_B
+- `u113D0 d u113D0 B` -> d_A_B.under
+- `d u113D0 B u113D0 r` -> d_A_B_A_r
+- `u113D0 d u113D0 B u113D0 r` -> d_A_B_A_r.under
+- `d u113D0 B u113D0 r U` -> d_A_B_A_r_U
+- `d u113D0 B u113D0 r u` -> d_A_B_A_r_u
+- `u113D0 d u113D0 B u113D0 r u` -> d_A_B_A_r_u.under
+- `d u113D0 B u113D0 y` -> d_A_B_A_y
+- `u113D0 d u113D0 B u113D0 y` -> d_A_B_A_y.under
+- `d u113D0 B u113D0 y U` -> d_A_B_A_y_U
+- `d u113D0 B u113D0 y u` -> d_A_B_A_y_u
+- `u113D0 d u113D0 B u113D0 y u` -> d_A_B_A_y_u.under
+- `d u113D0 B U` -> d_A_B_U
+- `d u113D0 B u` -> d_A_B_u
+- `u113D0 d u113D0 B u` -> d_A_B_u.under
+- `d u113D0 D` -> d_A_D
+- `u113D0 d u113D0 D` -> d_A_D.under
+- `d u113D0 D u113D0 m` -> d_A_D_A_m
+- `u113D0 d u113D0 D u113D0 m` -> d_A_D_A_m.under
+- `d u113D0 D u113D0 m U` -> d_A_D_A_m_U
+- `d u113D0 D u113D0 m u` -> d_A_D_A_m_u
+- `u113D0 d u113D0 D u113D0 m u` -> d_A_D_A_m_u.under
+- `d u113D0 D u113D0 r` -> d_A_D_A_r
+- `u113D0 d u113D0 D u113D0 r` -> d_A_D_A_r.under
+- `d u113D0 D u113D0 r U` -> d_A_D_A_r_U
+- `u113D0 d u113D0 D u113D0 r U` -> d_A_D_A_r_U.under
+- `d u113D0 D u113D0 v` -> d_A_D_A_v
+- `u113D0 d u113D0 D u113D0 v` -> d_A_D_A_v.under
+- `d u113D0 D u113D0 v U` -> d_A_D_A_v_U
+- `d u113D0 D u113D0 v u` -> d_A_D_A_v_u
+- `u113D0 d u113D0 D u113D0 v u` -> d_A_D_A_v_u.under
+- `d u113D0 D u113D0 y` -> d_A_D_A_y
+- `u113D0 d u113D0 D u113D0 y` -> d_A_D_A_y.under
+- `d u113D0 D u113D0 y U` -> d_A_D_A_y_U
+- `d u113D0 D u113D0 y u` -> d_A_D_A_y_u
+- `u113D0 d u113D0 D u113D0 y u` -> d_A_D_A_y_u.under
+- `d u113D0 D r u` -> d_A_D_r_u
+- `u113D0 d u113D0 D r u` -> d_A_D_r_u.under
+- `d u113D0 G` -> d_A_G
+- `u113D0 d u113D0 G` -> d_A_G.under
+- `d A` -> d_A_X
+- `d u113D0 b` -> d_A_b
+- `u113D0 d u113D0 b` -> d_A_b.under
+- `d u113D0 b u113D0 r` -> d_A_b_A_r
+- `u113D0 d u113D0 b u113D0 r` -> d_A_b_A_r.under
+- `d u113D0 b u113D0 r U` -> d_A_b_A_r_U
+- `d u113D0 b u113D0 r u` -> d_A_b_A_r_u
+- `u113D0 d u113D0 b u113D0 r u` -> d_A_b_A_r_u.under
+- `d u113D0 d` -> d_A_d
+- `u113D0 d u113D0 d` -> d_A_d.under
+- `d u113D0 d u113D0 r` -> d_A_d_A_r
+- `u113D0 d u113D0 d u113D0 r` -> d_A_d_A_r.under
+- `d u113D0 d u113D0 r U` -> d_A_d_A_r_U
+- `d u113D0 d u113D0 r u` -> d_A_d_A_r_u
+- `u113D0 d u113D0 d u113D0 r u` -> d_A_d_A_r_u.under
+- `d u113D0 d u113D0 y` -> d_A_d_A_y
+- `u113D0 d u113D0 d u113D0 y` -> d_A_d_A_y.under
+- `d u113D0 d u113D0 y U` -> d_A_d_A_y_U
+- `d u113D0 d u113D0 y u` -> d_A_d_A_y_u
+- `u113D0 d u113D0 d u113D0 y u` -> d_A_d_A_y_u.under
+- `d u113D0 d U` -> d_A_d_U
+- `u113D0 d u113D0 d U` -> d_A_d_U.under
+- `d u113D0 d u` -> d_A_d_u
+- `u113D0 d u113D0 d u` -> d_A_d_u.under
+- `d u113D0 g` -> d_A_g
+- `u113D0 d u113D0 g` -> d_A_g.under
+- `d u113D0 g u113D0 r` -> d_A_g_A_r
+- `u113D0 d u113D0 g u113D0 r` -> d_A_g_A_r.under
+- `d u113D0 g u113D0 r U` -> d_A_g_A_r_U
+- `d u113D0 g u113D0 r u` -> d_A_g_A_r_u
+- `u113D0 d u113D0 g u113D0 r u` -> d_A_g_A_r_u.under
+- `d u113D0 g R` -> d_A_g_R
+- `d u113D0 g U` -> d_A_g_U
+- `d u113D0 g u` -> d_A_g_u
+- `u113D0 d u113D0 g u` -> d_A_g_u.under
+- `d u113D0 k` -> d_A_k
+- `d u113D0 k A` -> d_A_k_A_X
+- `d u113D0 k U` -> d_A_k_U
+- `d u113D0 k u` -> d_A_k_u
+- `d u113D0 l` -> d_A_l
+- `u113D0 d u113D0 l` -> d_A_l.under
+- `d u113D0 l U` -> d_A_l_U
+- `d u113D0 l u` -> d_A_l_u
+- `u113D0 d u113D0 l u` -> d_A_l_u.under
+- `d u113D0 m` -> d_A_m
+- `u113D0 d u113D0 m` -> d_A_m.under
+- `d u113D0 m U` -> d_A_m_U
+- `u113D0 d u113D0 m U` -> d_A_m_U.under
+- `d u113D0 m u` -> d_A_m_u
+- `u113D0 d u113D0 m u` -> d_A_m_u.under
+- `d u113D0 r` -> d_A_r
+- `u113D0 d u113D0 r` -> d_A_r.under
+- `d u113D0 r U` -> d_A_r_U
+- `u113D0 d u113D0 r U` -> d_A_r_U.under
+- `d u113D0 r u` -> d_A_r_u
+- `u113D0 d u113D0 r u` -> d_A_r_u.under
+- `d u113D0 v` -> d_A_v
+- `u113D0 d u113D0 v` -> d_A_v.under
+- `d u113D0 v u113D0 y` -> d_A_v_A_y
+- `u113D0 d u113D0 v u113D0 y` -> d_A_v_A_y.under
+- `d u113D0 v u113D0 y U` -> d_A_v_A_y_U
+- `d u113D0 v u113D0 y u` -> d_A_v_A_y_u
+- `u113D0 d u113D0 v u113D0 y u` -> d_A_v_A_y_u.under
+- `d u113D0 y` -> d_A_y
+- `u113D0 d u113D0 y` -> d_A_y.under
+- `d u113D0 y U` -> d_A_y_U
+- `u113D0 d u113D0 y U` -> d_A_y_U.under
+- `d u113D0 y u` -> d_A_y_u
+- `u113D0 d u113D0 y u` -> d_A_y_u.under
+- `d R` -> d_R
+- `d R R` -> d_R_R
+- `d U` -> d_U
+- `u113D0 d U` -> d_U.under
+- `d u` -> d_u
+- `u113D0 d u` -> d_u.under
+- `g u113D0 B` -> g_A_B
+- `u113D0 g u113D0 B` -> g_A_B.under
+- `g u113D0 B u113D0 y` -> g_A_B_A_y
+- `u113D0 g u113D0 B u113D0 y` -> g_A_B_A_y.under
+- `g u113D0 B u113D0 y U` -> g_A_B_A_y_U
+- `g u113D0 B u113D0 y u` -> g_A_B_A_y_u
+- `u113D0 g u113D0 B u113D0 y u` -> g_A_B_A_y_u.under
+- `g u113D0 B u` -> g_A_B_u
+- `u113D0 g u113D0 B u` -> g_A_B_u.under
+- `g u113D0 D` -> g_A_D
+- `u113D0 g u113D0 D` -> g_A_D.under
+- `g u113D0 D u` -> g_A_D_u
+- `u113D0 g u113D0 D u` -> g_A_D_u.under
+- `g u113D0 G` -> g_A_G
+- `u113D0 g u113D0 G` -> g_A_G.under
+- `g u113D0 G R` -> g_A_G_R
+- `u113D0 g u113D0 G R` -> g_A_G_R.under
+- `g A` -> g_A_X
+- `g u113D0 b` -> g_A_b
+- `u113D0 g u113D0 b` -> g_A_b.under
+- `g u113D0 d` -> g_A_d
+- `u113D0 g u113D0 d` -> g_A_d.under
+- `g u113D0 d u113D0 D` -> g_A_d_A_D
+- `u113D0 g u113D0 d u113D0 D` -> g_A_d_A_D.under
+- `g u113D0 d u113D0 D u113D0 r` -> g_A_d_A_D_A_r
+- `u113D0 g u113D0 d u113D0 D u113D0 r` -> g_A_d_A_D_A_r.under
+- `g u113D0 d u113D0 D u113D0 r U` -> g_A_d_A_D_A_r_U
+- `g u113D0 d u113D0 D u113D0 r u` -> g_A_d_A_D_A_r_u
+- `u113D0 g u113D0 d u113D0 D u113D0 r u` -> g_A_d_A_D_A_r_u.under
+- `g u113D0 d u113D0 D U` -> g_A_d_A_D_U
+- `g u113D0 d u113D0 D u` -> g_A_d_A_D_u
+- `u113D0 g u113D0 d u113D0 D u` -> g_A_d_A_D_u.under
+- `g u113D0 d U` -> g_A_d_U
+- `g u113D0 d u` -> g_A_d_u
+- `u113D0 g u113D0 d u` -> g_A_d_u.under
+- `g u113D0 g` -> g_A_g
+- `u113D0 g u113D0 g` -> g_A_g.under
+- `g u113D0 g u113D0 y` -> g_A_g_A_y
+- `g u113D0 g u113D0 y U` -> g_A_g_A_y_U
+- `g u113D0 g u113D0 y u` -> g_A_g_A_y_u
+- `g u113D0 g R` -> g_A_g_R
+- `u113D0 g u113D0 g R` -> g_A_g_R.under
+- `g u113D0 g U` -> g_A_g_U
+- `u113D0 g u113D0 g U` -> g_A_g_U.under
+- `g u113D0 g u` -> g_A_g_u
+- `u113D0 g u113D0 g u` -> g_A_g_u.under
+- `g u113D0 j` -> g_A_j
+- `u113D0 g u113D0 j` -> g_A_j.under
+- `g u113D0 j U` -> g_A_j_U
+- `g u113D0 j u` -> g_A_j_u
+- `u113D0 g u113D0 j u` -> g_A_j_u.under
+- `g u113D0 l` -> g_A_l
+- `g u113D0 l U` -> g_A_l_U
+- `g u113D0 l u` -> g_A_l_u
+- `g u113D0 m` -> g_A_m
+- `u113D0 g u113D0 m` -> g_A_m.under
+- `g u113D0 n` -> g_A_n
+- `u113D0 g u113D0 n` -> g_A_n.under
+- `g u113D0 n u113D0 v` -> g_A_n_A_v
+- `u113D0 g u113D0 n u113D0 v` -> g_A_n_A_v.under
+- `g u113D0 n u113D0 y` -> g_A_n_A_y
+- `u113D0 g u113D0 n u113D0 y` -> g_A_n_A_y.under
+- `g u113D0 n u113D0 y U` -> g_A_n_A_y_U
+- `g u113D0 n u113D0 y u` -> g_A_n_A_y_u
+- `u113D0 g u113D0 n u113D0 y u` -> g_A_n_A_y_u.under
+- `g u113D0 n U` -> g_A_n_U
+- `u113D0 g u113D0 n U` -> g_A_n_U.under
+- `g u113D0 n u` -> g_A_n_u
+- `u113D0 g u113D0 n u` -> g_A_n_u.under
+- `g u113D0 r` -> g_A_r
+- `u113D0 g u113D0 r` -> g_A_r.under
+- `g u113D0 r U` -> g_A_r_U
+- `u113D0 g u113D0 r U` -> g_A_r_U.under
+- `g u113D0 r u` -> g_A_r_u
+- `u113D0 g u113D0 r u` -> g_A_r_u.under
+- `g u113D0 v` -> g_A_v
+- `u113D0 g u113D0 v` -> g_A_v.under
+- `g u113D0 y` -> g_A_y
+- `u113D0 g u113D0 y` -> g_A_y.under
+- `g u113D0 y U` -> g_A_y_U
+- `u113D0 g u113D0 y U` -> g_A_y_U.under
+- `g u113D0 y u` -> g_A_y_u
+- `u113D0 g u113D0 y u` -> g_A_y_u.under
+- `g R` -> g_R
+- `u113D0 g R` -> g_R.under
+- `g R R` -> g_R_R
+- `g U` -> g_U
+- `u113D0 g U` -> g_U.under
+- `g u` -> g_u
+- `u113D0 g u` -> g_u.under
+- `h A` -> h_A_X
+- `h u113D0 m` -> h_A_m
+- `u113D0 h u113D0 m` -> h_A_m.under
+- `h u113D0 y` -> h_A_y
+- `u113D0 h u113D0 y` -> h_A_y.under
+- `h u113D0 y U` -> h_A_y_U
+- `u113D0 h u113D0 y U` -> h_A_y_U.under
+- `h u113D0 y u` -> h_A_y_u
+- `u113D0 h u113D0 y u` -> h_A_y_u.under
+- `h R` -> h_R
+- `u113D0 h R` -> h_R.under
+- `h R R` -> h_R_R
+- `h U` -> h_U
+- `u113D0 h U` -> h_U.under
+- `h u` -> h_u
+- `u113D0 h u` -> h_u.under
+- `j u113D0 j` -> j_A_j
+- `u113D0 j u113D0 j` -> j_A_j.under
+- `j u113D0 j u113D0 y` -> j_A_j_A_y
+- `u113D0 j u113D0 j u113D0 y` -> j_A_j_A_y.under
+- `j u113D0 j u113D0 y U` -> j_A_j_A_y_U
+- `j u113D0 j u113D0 y u` -> j_A_j_A_y_u
+- `u113D0 j u113D0 j u113D0 y u` -> j_A_j_A_y_u.under
+- `j u113D0 j u113D0 z` -> j_A_j_A_z
+- `u113D0 j u113D0 j u113D0 z` -> j_A_j_A_z.under
+- `j u113D0 j u113D0 z U` -> j_A_j_A_z_U
+- `j u113D0 j u113D0 z u` -> j_A_j_A_z_u
+- `u113D0 j u113D0 j u113D0 z u` -> j_A_j_A_z_u.under
+- `j u113D0 j U` -> j_A_j_U
+- `u113D0 j u113D0 j U` -> j_A_j_U.under
+- `j u113D0 j u` -> j_A_j_u
+- `u113D0 j u113D0 j u` -> j_A_j_u.under
+- `j u113D0 m` -> j_A_m
+- `u113D0 j u113D0 m` -> j_A_m.under
+- `j u113D0 r` -> j_A_r
+- `u113D0 j u113D0 r` -> j_A_r.under
+- `j u113D0 r U` -> j_A_r_U
+- `u113D0 j u113D0 r U` -> j_A_r_U.under
+- `j u113D0 r u` -> j_A_r_u
+- `u113D0 j u113D0 r u` -> j_A_r_u.under
+- `j u113D0 v` -> j_A_v
+- `u113D0 j u113D0 v` -> j_A_v.under
+- `j u113D0 v U` -> j_A_v_U
+- `j u113D0 v u` -> j_A_v_u
+- `u113D0 j u113D0 v u` -> j_A_v_u.under
+- `j u113D0 y` -> j_A_y
+- `u113D0 j u113D0 y` -> j_A_y.under
+- `j u113D0 y U` -> j_A_y_U
+- `u113D0 j u113D0 y U` -> j_A_y_U.under
+- `j u113D0 y u` -> j_A_y_u
+- `u113D0 j u113D0 y u` -> j_A_y_u.under
+- `j u113D0 z` -> j_A_z
+- `u113D0 j u113D0 z` -> j_A_z.under
+- `j u113D0 z U` -> j_A_z_U
+- `u113D0 j u113D0 z U` -> j_A_z_U.under
+- `j u113D0 z u` -> j_A_z_u
+- `u113D0 j u113D0 z u` -> j_A_z_u.under
+- `j R` -> j_R
+- `u113D0 j R` -> j_R.under
+- `j R R` -> j_R_R
+- `j U` -> j_U
+- `u113D0 j U` -> j_U.under
+- `j u` -> j_u
+- `u113D0 j u` -> j_u.under
+- `k u113D0 L` -> k_A_L
+- `k u113D0 L U` -> k_A_L_U
+- `k u113D0 L u` -> k_A_L_u
+- `k u113D0 T` -> k_A_T
+- `u113D0 k u113D0 T` -> k_A_T.under
+- `k A` -> k_A_X
+- `k u113D0 k` -> k_A_k
+- `u113D0 k u113D0 k` -> k_A_k.under
+- `k u113D0 k A` -> k_A_k_A_X
+- `k u113D0 k u113D0 r` -> k_A_k_A_r
+- `u113D0 k u113D0 k u113D0 r` -> k_A_k_A_r.under
+- `k u113D0 k R` -> k_A_k_R
+- `u113D0 k u113D0 k R` -> k_A_k_R.under
+- `k u113D0 k U` -> k_A_k_U
+- `u113D0 k u113D0 k U` -> k_A_k_U.under
+- `k u113D0 k u` -> k_A_k_u
+- `u113D0 k u113D0 k u` -> k_A_k_u.under
+- `k u113D0 l` -> k_A_l
+- `k u113D0 l U` -> k_A_l_U
+- `k u113D0 l u` -> k_A_l_u
+- `k u113D0 m` -> k_A_m
+- `u113D0 k u113D0 m` -> k_A_m.under
+- `k u113D0 n` -> k_A_n
+- `u113D0 k u113D0 n` -> k_A_n.under
+- `k u113D0 n u113D0 y` -> k_A_n_A_y
+- `u113D0 k u113D0 n u113D0 y` -> k_A_n_A_y.under
+- `k u113D0 n u113D0 y U` -> k_A_n_A_y_U
+- `k u113D0 n u113D0 y u` -> k_A_n_A_y_u
+- `u113D0 k u113D0 n u113D0 y u` -> k_A_n_A_y_u.under
+- `k u113D0 n U` -> k_A_n_U
+- `u113D0 k u113D0 n U` -> k_A_n_U.under
+- `k u113D0 n u` -> k_A_n_u
+- `u113D0 k u113D0 n u` -> k_A_n_u.under
+- `k u113D0 q` -> k_A_q
+- `u113D0 k u113D0 q` -> k_A_q.under
+- `k u113D0 q U` -> k_A_q_U
+- `k u113D0 q u` -> k_A_q_u
+- `u113D0 k u113D0 q u` -> k_A_q_u.under
+- `k u113D0 r` -> k_A_r
+- `u113D0 k u113D0 r` -> k_A_r.under
+- `k u113D0 r U` -> k_A_r_U
+- `u113D0 k u113D0 r U` -> k_A_r_U.under
+- `k u113D0 r u` -> k_A_r_u
+- `u113D0 k u113D0 r u` -> k_A_r_u.under
+- `k u113D0 s` -> k_A_s
+- `u113D0 k u113D0 s` -> k_A_s.under
+- `k u113D0 s u113D0 s` -> k_A_s_A_s
+- `u113D0 k u113D0 s u113D0 s` -> k_A_s_A_s.under
+- `k u113D0 s u113D0 s U` -> k_A_s_A_s_U
+- `k u113D0 s u113D0 s u` -> k_A_s_A_s_u
+- `u113D0 k u113D0 s u113D0 s u` -> k_A_s_A_s_u.under
+- `k u113D0 t` -> k_A_t
+- `u113D0 k u113D0 t` -> k_A_t.under
+- `k u113D0 t u113D0 T` -> k_A_t_A_T
+- `u113D0 k u113D0 t u113D0 T` -> k_A_t_A_T.under
+- `k u113D0 t u113D0 r` -> k_A_t_A_r
+- `u113D0 k u113D0 t u113D0 r` -> k_A_t_A_r.under
+- `k u113D0 t u113D0 r u113D0 y` -> k_A_t_A_r_A_y
+- `u113D0 k u113D0 t u113D0 r u113D0 y` -> k_A_t_A_r_A_y.under
+- `k u113D0 t u113D0 r u113D0 y U` -> k_A_t_A_r_A_y_U
+- `k u113D0 t u113D0 r u113D0 y u` -> k_A_t_A_r_A_y_u
+- `u113D0 k u113D0 t u113D0 r u113D0 y u` -> k_A_t_A_r_A_y_u.under
+- `k u113D0 t u113D0 r U` -> k_A_t_A_r_U
+- `k u113D0 t u113D0 r u` -> k_A_t_A_r_u
+- `u113D0 k u113D0 t u113D0 r u` -> k_A_t_A_r_u.under
+- `k u113D0 t u113D0 v` -> k_A_t_A_v
+- `u113D0 k u113D0 t u113D0 v` -> k_A_t_A_v.under
+- `k u113D0 t u113D0 y` -> k_A_t_A_y
+- `u113D0 k u113D0 t u113D0 y` -> k_A_t_A_y.under
+- `k u113D0 t u113D0 y U` -> k_A_t_A_y_U
+- `u113D0 k u113D0 t u113D0 y U` -> k_A_t_A_y_U.under
+- `k u113D0 t u113D0 y u` -> k_A_t_A_y_u
+- `u113D0 k u113D0 t u113D0 y u` -> k_A_t_A_y_u.under
+- `k u113D0 t R` -> k_A_t_R
+- `u113D0 k u113D0 t R` -> k_A_t_R.under
+- `k u113D0 t U` -> k_A_t_U
+- `u113D0 k u113D0 t U` -> k_A_t_U.under
+- `k u113D0 t u` -> k_A_t_u
+- `u113D0 k u113D0 t u` -> k_A_t_u.under
+- `k u113D0 v` -> k_A_v
+- `u113D0 k u113D0 v` -> k_A_v.under
+- `k u113D0 x` -> k_A_x
+- `u113D0 k u113D0 x` -> k_A_x.under
+- `k u113D0 x u113D0 k u113D0 r` -> k_A_x_A_k_A_r
+- `u113D0 k u113D0 x u113D0 k u113D0 r` -> k_A_x_A_k_A_r.under
+- `k u113D0 x u113D0 k u113D0 r U` -> k_A_x_A_k_A_r_U
+- `k u113D0 x u113D0 k u113D0 y` -> k_A_x_A_k_A_y
+- `u113D0 k u113D0 x u113D0 k u113D0 y` -> k_A_x_A_k_A_y.under
+- `k u113D0 x u113D0 k u113D0 y U` -> k_A_x_A_k_A_y_U
+- `k u113D0 x u113D0 l` -> k_A_x_A_l
+- `u113D0 k u113D0 x u113D0 l` -> k_A_x_A_l.under
+- `k u113D0 x u113D0 l U` -> k_A_x_A_l_U
+- `k u113D0 x u113D0 l u` -> k_A_x_A_l_u
+- `u113D0 k u113D0 x u113D0 l u` -> k_A_x_A_l_u.under
+- `k u113D0 x u113D0 m` -> k_A_x_A_m
+- `u113D0 k u113D0 x u113D0 m` -> k_A_x_A_m.under
+- `k u113D0 x u113D0 m u113D0 y` -> k_A_x_A_m_A_y
+- `u113D0 k u113D0 x u113D0 m u113D0 y` -> k_A_x_A_m_A_y.under
+- `k u113D0 x u113D0 m u113D0 y U` -> k_A_x_A_m_A_y_U
+- `k u113D0 x u113D0 m u113D0 y u` -> k_A_x_A_m_A_y_u
+- `u113D0 k u113D0 x u113D0 m u113D0 y u` -> k_A_x_A_m_A_y_u.under
+- `k u113D0 x u113D0 m U` -> k_A_x_A_m_U
+- `u113D0 k u113D0 x u113D0 m U` -> k_A_x_A_m_U.under
+- `k u113D0 x u113D0 m u` -> k_A_x_A_m_u
+- `u113D0 k u113D0 x u113D0 m u` -> k_A_x_A_m_u.under
+- `k u113D0 x u113D0 r` -> k_A_x_A_r
+- `u113D0 k u113D0 x u113D0 r` -> k_A_x_A_r.under
+- `k u113D0 x u113D0 r U` -> k_A_x_A_r_U
+- `k u113D0 x u113D0 r u` -> k_A_x_A_r_u
+- `u113D0 k u113D0 x u113D0 r u` -> k_A_x_A_r_u.under
+- `k u113D0 x u113D0 v` -> k_A_x_A_v
+- `u113D0 k u113D0 x u113D0 v` -> k_A_x_A_v.under
+- `k u113D0 x u113D0 v U` -> k_A_x_A_v_U
+- `k u113D0 x u113D0 v u` -> k_A_x_A_v_u
+- `u113D0 k u113D0 x u113D0 v u` -> k_A_x_A_v_u.under
+- `k u113D0 x u113D0 y` -> k_A_x_A_y
+- `u113D0 k u113D0 x u113D0 y` -> k_A_x_A_y.under
+- `k u113D0 x u113D0 y U` -> k_A_x_A_y_U
+- `k u113D0 x u113D0 y u` -> k_A_x_A_y_u
+- `u113D0 k u113D0 x u113D0 y u` -> k_A_x_A_y_u.under
+- `k u113D0 y` -> k_A_y
+- `u113D0 k u113D0 y` -> k_A_y.under
+- `k u113D0 y U` -> k_A_y_U
+- `u113D0 k u113D0 y U` -> k_A_y_U.under
+- `k u113D0 y u` -> k_A_y_u
+- `u113D0 k u113D0 y u` -> k_A_y_u.under
+- `k R` -> k_R
+- `u113D0 k R` -> k_R.under
+- `k R R` -> k_R_R
+- `k U` -> k_U
+- `u113D0 k U` -> k_U.under
+- `k u` -> k_u
+- `u113D0 k u` -> k_u.under
+- `l u113D0 k` -> l_A_k
+- `u113D0 l u113D0 k` -> l_A_k.under
+- `l u113D0 k U` -> l_A_k_U
+- `l u113D0 k u` -> l_A_k_u
+- `u113D0 l u113D0 k u` -> l_A_k_u.under
+- `l u113D0 y` -> l_A_y
+- `u113D0 l u113D0 y` -> l_A_y.under
+- `l u113D0 y U` -> l_A_y_U
+- `u113D0 l u113D0 y U` -> l_A_y_U.under
+- `l u113D0 y u` -> l_A_y_u
+- `u113D0 l u113D0 y u` -> l_A_y_u.under
+- `m A` -> m_A_X
+- `m u113D0 m` -> m_A_m
+- `u113D0 m u113D0 m` -> m_A_m.under
+- `m u113D0 m A` -> m_A_m_A_X
+- `m u113D0 m u113D0 y` -> m_A_m_A_y
+- `u113D0 m u113D0 m u113D0 y` -> m_A_m_A_y.under
+- `m u113D0 m u113D0 y U` -> m_A_m_A_y_U
+- `m u113D0 m u113D0 y u` -> m_A_m_A_y_u
+- `u113D0 m u113D0 m u113D0 y u` -> m_A_m_A_y_u.under
+- `m u113D0 r` -> m_A_r
+- `u113D0 m u113D0 r` -> m_A_r.under
+- `m u113D0 r U` -> m_A_r_U
+- `u113D0 m u113D0 r U` -> m_A_r_U.under
+- `m u113D0 r u` -> m_A_r_u
+- `u113D0 m u113D0 r u` -> m_A_r_u.under
+- `m u113D0 y` -> m_A_y
+- `u113D0 m u113D0 y` -> m_A_y.under
+- `m u113D0 y U` -> m_A_y_U
+- `u113D0 m u113D0 y U` -> m_A_y_U.under
+- `m u113D0 y u` -> m_A_y_u
+- `u113D0 m u113D0 y u` -> m_A_y_u.under
+- `m R` -> m_R
+- `u113D0 m R` -> m_R.under
+- `m R R` -> m_R_R
+- `n u113D0 B` -> n_A_B
+- `u113D0 n u113D0 B` -> n_A_B.under
+- `n u113D0 B u` -> n_A_B_u
+- `u113D0 n u113D0 B u` -> n_A_B_u.under
+- `n u113D0 D` -> n_A_D
+- `u113D0 n u113D0 D` -> n_A_D.under
+- `n u113D0 D u113D0 r` -> n_A_D_A_r
+- `u113D0 n u113D0 D u113D0 r` -> n_A_D_A_r.under
+- `n u113D0 D u113D0 r U` -> n_A_D_A_r_U
+- `n u113D0 D u113D0 r u` -> n_A_D_A_r_u
+- `u113D0 n u113D0 D u113D0 r u` -> n_A_D_A_r_u.under
+- `n u113D0 D u113D0 v` -> n_A_D_A_v
+- `u113D0 n u113D0 D u113D0 v` -> n_A_D_A_v.under
+- `n u113D0 D u113D0 v U` -> n_A_D_A_v_U
+- `n u113D0 D u113D0 v u` -> n_A_D_A_v_u
+- `u113D0 n u113D0 D u113D0 v u` -> n_A_D_A_v_u.under
+- `n u113D0 D u113D0 y` -> n_A_D_A_y
+- `u113D0 n u113D0 D u113D0 y` -> n_A_D_A_y.under
+- `n u113D0 D u113D0 y U` -> n_A_D_A_y_U
+- `n u113D0 D u113D0 y u` -> n_A_D_A_y_u
+- `u113D0 n u113D0 D u113D0 y u` -> n_A_D_A_y_u.under
+- `n u113D0 G` -> n_A_G
+- `u113D0 n u113D0 G` -> n_A_G.under
+- `n u113D0 G u113D0 R` -> n_A_G_A_R
+- `u113D0 n u113D0 G u113D0 R` -> n_A_G_A_R.under
+- `n u113D0 T` -> n_A_T
+- `u113D0 n u113D0 T` -> n_A_T.under
+- `n A` -> n_A_X
+- `n u113D0 b` -> n_A_b
+- `u113D0 n u113D0 b` -> n_A_b.under
+- `n u113D0 b u113D0 r` -> n_A_b_A_r
+- `u113D0 n u113D0 b u113D0 r` -> n_A_b_A_r.under
+- `n u113D0 b u113D0 r U` -> n_A_b_A_r_U
+- `n u113D0 b u113D0 r u` -> n_A_b_A_r_u
+- `u113D0 n u113D0 b u113D0 r u` -> n_A_b_A_r_u.under
+- `n u113D0 d` -> n_A_d
+- `u113D0 n u113D0 d` -> n_A_d.under
+- `n u113D0 d A` -> n_A_d_A_X
+- `n u113D0 d u113D0 r` -> n_A_d_A_r
+- `u113D0 n u113D0 d u113D0 r` -> n_A_d_A_r.under
+- `n u113D0 d u113D0 r U` -> n_A_d_A_r_U
+- `u113D0 n u113D0 d u113D0 r U` -> n_A_d_A_r_U.under
+- `n u113D0 d u113D0 r u` -> n_A_d_A_r_u
+- `u113D0 n u113D0 d u113D0 r u` -> n_A_d_A_r_u.under
+- `n u113D0 d u113D0 v` -> n_A_d_A_v
+- `u113D0 n u113D0 d u113D0 v` -> n_A_d_A_v.under
+- `n u113D0 d u113D0 y` -> n_A_d_A_y
+- `u113D0 n u113D0 d u113D0 y` -> n_A_d_A_y.under
+- `n u113D0 d u113D0 y U` -> n_A_d_A_y_U
+- `n u113D0 d u113D0 y u` -> n_A_d_A_y_u
+- `u113D0 n u113D0 d u113D0 y u` -> n_A_d_A_y_u.under
+- `n u113D0 d U` -> n_A_d_U
+- `u113D0 n u113D0 d U` -> n_A_d_U.under
+- `n u113D0 d u` -> n_A_d_u
+- `u113D0 n u113D0 d u` -> n_A_d_u.under
+- `n u113D0 h` -> n_A_h
+- `u113D0 n u113D0 h` -> n_A_h.under
+- `n u113D0 h U` -> n_A_h_U
+- `n u113D0 h u` -> n_A_h_u
+- `u113D0 n u113D0 h u` -> n_A_h_u.under
+- `n u113D0 k` -> n_A_k
+- `u113D0 n u113D0 k` -> n_A_k.under
+- `n u113D0 k u113D0 t` -> n_A_k_A_t
+- `u113D0 n u113D0 k u113D0 t` -> n_A_k_A_t.under
+- `n u113D0 k u113D0 t U` -> n_A_k_A_t_U
+- `n u113D0 k u113D0 t u` -> n_A_k_A_t_u
+- `u113D0 n u113D0 k u113D0 t u` -> n_A_k_A_t_u.under
+- `n u113D0 k u113D0 x` -> n_A_k_A_x
+- `u113D0 n u113D0 k u113D0 x` -> n_A_k_A_x.under
+- `n u113D0 k R` -> n_A_k_R
+- `u113D0 n u113D0 k R` -> n_A_k_R.under
+- `n u113D0 k U` -> n_A_k_U
+- `u113D0 n u113D0 k U` -> n_A_k_U.under
+- `n u113D0 k u` -> n_A_k_u
+- `u113D0 n u113D0 k u` -> n_A_k_u.under
+- `n u113D0 m` -> n_A_m
+- `u113D0 n u113D0 m` -> n_A_m.under
+- `n u113D0 m R` -> n_A_m_R
+- `n u113D0 n` -> n_A_n
+- `u113D0 n u113D0 n` -> n_A_n.under
+- `n u113D0 n A` -> n_A_n_A_X
+- `n u113D0 n U` -> n_A_n_U
+- `u113D0 n u113D0 n U` -> n_A_n_U.under
+- `n u113D0 n u` -> n_A_n_u
+- `u113D0 n u113D0 n u` -> n_A_n_u.under
+- `n u113D0 q` -> n_A_q
+- `u113D0 n u113D0 q` -> n_A_q.under
+- `n u113D0 q U` -> n_A_q_U
+- `n u113D0 q u` -> n_A_q_u
+- `u113D0 n u113D0 q u` -> n_A_q_u.under
+- `n u113D0 r` -> n_A_r
+- `u113D0 n u113D0 r` -> n_A_r.under
+- `n u113D0 r U` -> n_A_r_U
+- `u113D0 n u113D0 r U` -> n_A_r_U.under
+- `n u113D0 r u` -> n_A_r_u
+- `u113D0 n u113D0 r u` -> n_A_r_u.under
+- `n u113D0 t` -> n_A_t
+- `u113D0 n u113D0 t` -> n_A_t.under
+- `n u113D0 t A` -> n_A_t_A_X
+- `n u113D0 t u113D0 d` -> n_A_t_A_d
+- `n u113D0 t u113D0 d U` -> n_A_t_A_d_U
+- `n u113D0 t u113D0 d u` -> n_A_t_A_d_u
+- `n u113D0 t u113D0 n` -> n_A_t_A_n
+- `n u113D0 t u113D0 n U` -> n_A_t_A_n_U
+- `n u113D0 t u113D0 n u` -> n_A_t_A_n_u
+- `n u113D0 t u113D0 r` -> n_A_t_A_r
+- `u113D0 n u113D0 t u113D0 r` -> n_A_t_A_r.under
+- `n u113D0 t u113D0 r u113D0 y` -> n_A_t_A_r_A_y
+- `u113D0 n u113D0 t u113D0 r u113D0 y` -> n_A_t_A_r_A_y.under
+- `n u113D0 t u113D0 r u113D0 y U` -> n_A_t_A_r_A_y_U
+- `n u113D0 t u113D0 r u113D0 y u` -> n_A_t_A_r_A_y_u
+- `u113D0 n u113D0 t u113D0 r u113D0 y u` -> n_A_t_A_r_A_y_u.under
+- `n u113D0 t u113D0 r U` -> n_A_t_A_r_U
+- `u113D0 n u113D0 t u113D0 r U` -> n_A_t_A_r_U.under
+- `n u113D0 t u113D0 r u` -> n_A_t_A_r_u
+- `u113D0 n u113D0 t u113D0 r u` -> n_A_t_A_r_u.under
+- `n u113D0 t u113D0 s` -> n_A_t_A_s
+- `u113D0 n u113D0 t u113D0 s` -> n_A_t_A_s.under
+- `n u113D0 t u113D0 v` -> n_A_t_A_v
+- `u113D0 n u113D0 t u113D0 v` -> n_A_t_A_v.under
+- `n u113D0 t u113D0 y` -> n_A_t_A_y
+- `u113D0 n u113D0 t u113D0 y` -> n_A_t_A_y.under
+- `n u113D0 t u113D0 y U` -> n_A_t_A_y_U
+- `n u113D0 t u113D0 y u` -> n_A_t_A_y_u
+- `u113D0 n u113D0 t u113D0 y u` -> n_A_t_A_y_u.under
+- `n u113D0 t U` -> n_A_t_U
+- `u113D0 n u113D0 t U` -> n_A_t_U.under
+- `n u113D0 t u` -> n_A_t_u
+- `u113D0 n u113D0 t u` -> n_A_t_u.under
+- `n u113D0 v` -> n_A_v
+- `u113D0 n u113D0 v` -> n_A_v.under
+- `n u113D0 y` -> n_A_y
+- `u113D0 n u113D0 y` -> n_A_y.under
+- `n u113D0 y U` -> n_A_y_U
+- `u113D0 n u113D0 y U` -> n_A_y_U.under
+- `n u113D0 y u` -> n_A_y_u
+- `u113D0 n u113D0 y u` -> n_A_y_u.under
+- `n R` -> n_R
+- `u113D0 n R` -> n_R.under
+- `n R R` -> n_R_R
+- `n U` -> n_U
+- `u113D0 n U` -> n_U.under
+- `n u` -> n_u
+- `u113D0 n u` -> n_u.under
+- `p u113D0 C` -> p_A_C
+- `u113D0 p u113D0 C` -> p_A_C.under
+- `p u113D0 C U` -> p_A_C_U
+- `p u113D0 C u` -> p_A_C_u
+- `p u113D0 P` -> p_A_P
+- `p u113D0 P U` -> p_A_P_U
+- `p u113D0 P u` -> p_A_P_u
+- `p u113D0 m` -> p_A_m
+- `u113D0 p u113D0 m` -> p_A_m.under
+- `p u113D0 m U` -> p_A_m_U
+- `p u113D0 m u` -> p_A_m_u
+- `u113D0 p u113D0 m u` -> p_A_m_u.under
+- `p u113D0 p` -> p_A_p
+- `p u113D0 p U` -> p_A_p_U
+- `p u113D0 p u` -> p_A_p_u
+- `p u113D0 r` -> p_A_r
+- `u113D0 p u113D0 r` -> p_A_r.under
+- `p u113D0 r U` -> p_A_r_U
+- `u113D0 p u113D0 r U` -> p_A_r_U.under
+- `p u113D0 r u` -> p_A_r_u
+- `u113D0 p u113D0 r u` -> p_A_r_u.under
+- `p u113D0 s` -> p_A_s
+- `p u113D0 s u113D0 T` -> p_A_s_A_T
+- `p u113D0 s u113D0 T U` -> p_A_s_A_T_U
+- `p u113D0 s u113D0 T u` -> p_A_s_A_T_u
+- `p u113D0 s u113D0 m` -> p_A_s_A_m
+- `p u113D0 s u113D0 m u` -> p_A_s_A_m_u
+- `p u113D0 s u113D0 t` -> p_A_s_A_t
+- `p u113D0 s u113D0 t u` -> p_A_s_A_t_u
+- `p u113D0 s u113D0 v` -> p_A_s_A_v
+- `p u113D0 s u113D0 v U` -> p_A_s_A_v_U
+- `p u113D0 s u113D0 v u` -> p_A_s_A_v_u
+- `p u113D0 s u113D0 y` -> p_A_s_A_y
+- `p u113D0 s u113D0 y u` -> p_A_s_A_y_u
+- `p u113D0 s U` -> p_A_s_U
+- `p u113D0 s u` -> p_A_s_u
+- `p u113D0 t` -> p_A_t
+- `u113D0 p u113D0 t` -> p_A_t.under
+- `p u113D0 t u113D0 v` -> p_A_t_A_v
+- `u113D0 p u113D0 t u113D0 v` -> p_A_t_A_v.under
+- `p u113D0 t u113D0 v U` -> p_A_t_A_v_U
+- `p u113D0 t u113D0 v u` -> p_A_t_A_v_u
+- `u113D0 p u113D0 t u113D0 v u` -> p_A_t_A_v_u.under
+- `p u113D0 t U` -> p_A_t_U
+- `p u113D0 t u` -> p_A_t_u
+- `u113D0 p u113D0 t u` -> p_A_t_u.under
+- `p u113D0 y` -> p_A_y
+- `u113D0 p u113D0 y` -> p_A_y.under
+- `p u113D0 y U` -> p_A_y_U
+- `u113D0 p u113D0 y U` -> p_A_y_U.under
+- `p u113D0 y u` -> p_A_y_u
+- `u113D0 p u113D0 y u` -> p_A_y_u.under
+- `p R` -> p_R
+- `u113D0 p R` -> p_R.under
+- `p R R` -> p_R_R
+- `q u113D0 Q` -> q_A_Q
+- `u113D0 q u113D0 Q` -> q_A_Q.under
+- `q u113D0 Q U` -> q_A_Q_U
+- `q u113D0 Q u` -> q_A_Q_u
+- `u113D0 q u113D0 Q u` -> q_A_Q_u.under
+- `q A` -> q_A_X
+- `q u113D0 l` -> q_A_l
+- `q u113D0 l U` -> q_A_l_U
+- `q u113D0 l u` -> q_A_l_u
+- `q u113D0 q` -> q_A_q
+- `u113D0 q u113D0 q` -> q_A_q.under
+- `q u113D0 q A` -> q_A_q_A_X
+- `q u113D0 q u113D0 y` -> q_A_q_A_y
+- `u113D0 q u113D0 q u113D0 y` -> q_A_q_A_y.under
+- `q u113D0 q u113D0 y U` -> q_A_q_A_y_U
+- `q u113D0 q u113D0 y u` -> q_A_q_A_y_u
+- `u113D0 q u113D0 q u113D0 y u` -> q_A_q_A_y_u.under
+- `q u113D0 q U` -> q_A_q_U
+- `u113D0 q u113D0 q U` -> q_A_q_U.under
+- `q u113D0 q u` -> q_A_q_u
+- `u113D0 q u113D0 q u` -> q_A_q_u.under
+- `q u113D0 r` -> q_A_r
+- `u113D0 q u113D0 r` -> q_A_r.under
+- `q u113D0 r U` -> q_A_r_U
+- `u113D0 q u113D0 r U` -> q_A_r_U.under
+- `q u113D0 r u` -> q_A_r_u
+- `u113D0 q u113D0 r u` -> q_A_r_u.under
+- `q u113D0 v` -> q_A_v
+- `u113D0 q u113D0 v` -> q_A_v.under
+- `q u113D0 y` -> q_A_y
+- `u113D0 q u113D0 y` -> q_A_y.under
+- `q u113D0 y U` -> q_A_y_U
+- `u113D0 q u113D0 y U` -> q_A_y_U.under
+- `q u113D0 y u` -> q_A_y_u
+- `u113D0 q u113D0 y u` -> q_A_y_u.under
+- `q U` -> q_U
+- `u113D0 q U` -> q_U.under
+- `q u` -> q_u
+- `u113D0 q u` -> q_u.under
+- `r A` -> r_A_X
+- `r u113D0 r` -> r_A_r
+- `r u113D0 r U` -> r_A_r_U
+- `r u113D0 r u` -> r_A_r_u
+- `r U` -> r_U
+- `r u` -> r_u
+- `s u113D0 T` -> s_A_T
+- `u113D0 s u113D0 T` -> s_A_T.under
+- `s u113D0 m` -> s_A_m
+- `u113D0 s u113D0 m` -> s_A_m.under
+- `s u113D0 m R` -> s_A_m_R
+- `u113D0 s u113D0 m R` -> s_A_m_R.under
+- `s u113D0 m U` -> s_A_m_U
+- `u113D0 s u113D0 m U` -> s_A_m_U.under
+- `s u113D0 m u` -> s_A_m_u
+- `u113D0 s u113D0 m u` -> s_A_m_u.under
+- `s u113D0 q` -> s_A_q
+- `s u113D0 q A` -> s_A_q_A_X
+- `s u113D0 q U` -> s_A_q_U
+- `s u113D0 q u` -> s_A_q_u
+- `s u113D0 r` -> s_A_r
+- `u113D0 s u113D0 r` -> s_A_r.under
+- `s u113D0 s` -> s_A_s
+- `u113D0 s u113D0 s` -> s_A_s.under
+- `s u113D0 s U` -> s_A_s_U
+- `u113D0 s u113D0 s U` -> s_A_s_U.under
+- `s u113D0 s u` -> s_A_s_u
+- `u113D0 s u113D0 s u` -> s_A_s_u.under
+- `s u113D0 t` -> s_A_t
+- `s u113D0 t u113D0 r` -> s_A_t_A_r
+- `s u113D0 t u113D0 r U` -> s_A_t_A_r_U
+- `s u113D0 t u113D0 r u` -> s_A_t_A_r_u
+- `s u113D0 t u113D0 v` -> s_A_t_A_v
+- `s u113D0 t U` -> s_A_t_U
+- `s u113D0 t u` -> s_A_t_u
+- `s u113D0 v` -> s_A_v
+- `s u113D0 y` -> s_A_y
+- `u113D0 s u113D0 y` -> s_A_y.under
+- `s u113D0 y U` -> s_A_y_U
+- `u113D0 s u113D0 y U` -> s_A_y_U.under
+- `s u113D0 y u` -> s_A_y_u
+- `u113D0 s u113D0 y u` -> s_A_y_u.under
+- `t u113D0 T` -> t_A_T
+- `u113D0 t u113D0 T` -> t_A_T.under
+- `t u113D0 T u113D0 y` -> t_A_T_A_y
+- `u113D0 t u113D0 T u113D0 y` -> t_A_T_A_y.under
+- `t u113D0 T u113D0 y U` -> t_A_T_A_y_U
+- `t u113D0 T u113D0 y u` -> t_A_T_A_y_u
+- `u113D0 t u113D0 T u113D0 y u` -> t_A_T_A_y_u.under
+- `t A` -> t_A_X
+- `t u113D0 k` -> t_A_k
+- `u113D0 t u113D0 k` -> t_A_k.under
+- `t u113D0 k u113D0 r` -> t_A_k_A_r
+- `u113D0 t u113D0 k u113D0 r` -> t_A_k_A_r.under
+- `t u113D0 k u113D0 r U` -> t_A_k_A_r_U
+- `t u113D0 k u113D0 r u` -> t_A_k_A_r_u
+- `u113D0 t u113D0 k u113D0 r u` -> t_A_k_A_r_u.under
+- `t u113D0 k u113D0 x` -> t_A_k_A_x
+- `u113D0 t u113D0 k u113D0 x` -> t_A_k_A_x.under
+- `t u113D0 k u113D0 x u113D0 m` -> t_A_k_A_x_A_m
+- `u113D0 t u113D0 k u113D0 x u113D0 m` -> t_A_k_A_x_A_m.under
+- `t u113D0 k u113D0 x u113D0 m U` -> t_A_k_A_x_A_m_U
+- `t u113D0 k u113D0 x u113D0 m u` -> t_A_k_A_x_A_m_u
+- `t u113D0 k u113D0 x U` -> t_A_k_A_x_U
+- `t u113D0 k u113D0 x u` -> t_A_k_A_x_u
+- `t u113D0 k R` -> t_A_k_R
+- `u113D0 t u113D0 k R` -> t_A_k_R.under
+- `t u113D0 k U` -> t_A_k_U
+- `u113D0 t u113D0 k U` -> t_A_k_U.under
+- `t u113D0 k u` -> t_A_k_u
+- `u113D0 t u113D0 k u` -> t_A_k_u.under
+- `t u113D0 l` -> t_A_l
+- `t u113D0 l U` -> t_A_l_U
+- `t u113D0 l u` -> t_A_l_u
+- `t u113D0 m` -> t_A_m
+- `u113D0 t u113D0 m` -> t_A_m.under
+- `t u113D0 m u113D0 r` -> t_A_m_A_r
+- `u113D0 t u113D0 m u113D0 r` -> t_A_m_A_r.under
+- `t u113D0 m u113D0 r U` -> t_A_m_A_r_U
+- `t u113D0 m u113D0 r u` -> t_A_m_A_r_u
+- `u113D0 t u113D0 m u113D0 r u` -> t_A_m_A_r_u.under
+- `t u113D0 m u113D0 y` -> t_A_m_A_y
+- `u113D0 t u113D0 m u113D0 y` -> t_A_m_A_y.under
+- `t u113D0 m u113D0 y U` -> t_A_m_A_y_U
+- `t u113D0 m u113D0 y u` -> t_A_m_A_y_u
+- `u113D0 t u113D0 m u113D0 y u` -> t_A_m_A_y_u.under
+- `t u113D0 n` -> t_A_n
+- `u113D0 t u113D0 n` -> t_A_n.under
+- `t u113D0 n A` -> t_A_n_A_X
+- `t u113D0 n u113D0 t` -> t_A_n_A_t
+- `t u113D0 n u113D0 t A` -> t_A_n_A_t_A_X
+- `t u113D0 n u113D0 t U` -> t_A_n_A_t_U
+- `t u113D0 n u113D0 t u` -> t_A_n_A_t_u
+- `t u113D0 n u113D0 y` -> t_A_n_A_y
+- `u113D0 t u113D0 n u113D0 y` -> t_A_n_A_y.under
+- `t u113D0 n u113D0 y U` -> t_A_n_A_y_U
+- `t u113D0 n u113D0 y u` -> t_A_n_A_y_u
+- `u113D0 t u113D0 n u113D0 y u` -> t_A_n_A_y_u.under
+- `t u113D0 n U` -> t_A_n_U
+- `u113D0 t u113D0 n U` -> t_A_n_U.under
+- `t u113D0 n u` -> t_A_n_u
+- `u113D0 t u113D0 n u` -> t_A_n_u.under
+- `t u113D0 r` -> t_A_r
+- `u113D0 t u113D0 r` -> t_A_r.under
+- `t u113D0 r u113D0 v` -> t_A_r_A_v
+- `u113D0 t u113D0 r u113D0 v` -> t_A_r_A_v.under
+- `t u113D0 r u113D0 v U` -> t_A_r_A_v_U
+- `t u113D0 r u113D0 v u` -> t_A_r_A_v_u
+- `u113D0 t u113D0 r u113D0 v u` -> t_A_r_A_v_u.under
+- `t u113D0 r u113D0 y` -> t_A_r_A_y
+- `u113D0 t u113D0 r u113D0 y` -> t_A_r_A_y.under
+- `t u113D0 r u113D0 y U` -> t_A_r_A_y_U
+- `t u113D0 r u113D0 y u` -> t_A_r_A_y_u
+- `u113D0 t u113D0 r u113D0 y u` -> t_A_r_A_y_u.under
+- `t u113D0 r U` -> t_A_r_U
+- `u113D0 t u113D0 r U` -> t_A_r_U.under
+- `t u113D0 r u` -> t_A_r_u
+- `u113D0 t u113D0 r u` -> t_A_r_u.under
+- `t u113D0 s` -> t_A_s
+- `u113D0 t u113D0 s` -> t_A_s.under
+- `t u113D0 s u113D0 T` -> t_A_s_A_T
+- `u113D0 t u113D0 s u113D0 T` -> t_A_s_A_T.under
+- `t u113D0 s u113D0 v` -> t_A_s_A_v
+- `u113D0 t u113D0 s u113D0 v` -> t_A_s_A_v.under
+- `t u113D0 s u113D0 y` -> t_A_s_A_y
+- `u113D0 t u113D0 s u113D0 y` -> t_A_s_A_y.under
+- `t u113D0 s u113D0 y U` -> t_A_s_A_y_U
+- `t u113D0 s u113D0 y u` -> t_A_s_A_y_u
+- `u113D0 t u113D0 s u113D0 y u` -> t_A_s_A_y_u.under
+- `t u113D0 t` -> t_A_t
+- `u113D0 t u113D0 t` -> t_A_t.under
+- `t u113D0 t A` -> t_A_t_A_X
+- `t u113D0 t u113D0 r` -> t_A_t_A_r
+- `t u113D0 t u113D0 r U` -> t_A_t_A_r_U
+- `t u113D0 t u113D0 r u` -> t_A_t_A_r_u
+- `t u113D0 t u113D0 v` -> t_A_t_A_v
+- `u113D0 t u113D0 t u113D0 v` -> t_A_t_A_v.under
+- `t u113D0 t u113D0 y` -> t_A_t_A_y
+- `u113D0 t u113D0 t u113D0 y` -> t_A_t_A_y.under
+- `t u113D0 t u113D0 y U` -> t_A_t_A_y_U
+- `t u113D0 t u113D0 y u` -> t_A_t_A_y_u
+- `u113D0 t u113D0 t u113D0 y u` -> t_A_t_A_y_u.under
+- `t u113D0 t R` -> t_A_t_R
+- `u113D0 t u113D0 t R` -> t_A_t_R.under
+- `t u113D0 t U` -> t_A_t_U
+- `u113D0 t u113D0 t U` -> t_A_t_U.under
+- `t u113D0 t u` -> t_A_t_u
+- `u113D0 t u113D0 t u` -> t_A_t_u.under
+- `t u113D0 v` -> t_A_v
+- `u113D0 t u113D0 v` -> t_A_v.under
+- `t u113D0 y` -> t_A_y
+- `u113D0 t u113D0 y` -> t_A_y.under
+- `t u113D0 y U` -> t_A_y_U
+- `u113D0 t u113D0 y U` -> t_A_y_U.under
+- `t u113D0 y u` -> t_A_y_u
+- `u113D0 t u113D0 y u` -> t_A_y_u.under
+- `t R` -> t_R
+- `u113D0 t R` -> t_R.under
+- `t R R` -> t_R_R
+- `t U` -> t_U
+- `u113D0 t U` -> t_U.under
+- `t u` -> t_u
+- `u113D0 t u` -> t_u.under
+- `v u113D0 v` -> v_A_v
+- `v u113D0 y` -> v_A_y
+- `u113D0 v u113D0 y` -> v_A_y.under
+- `v u113D0 y U` -> v_A_y_U
+- `u113D0 v u113D0 y U` -> v_A_y_U.under
+- `v u113D0 y u` -> v_A_y_u
+- `u113D0 v u113D0 y u` -> v_A_y_u.under
+- `v R` -> v_R
+- `u113D0 v R` -> v_R.under
+- `v R R` -> v_R_R
+- `w u113D0 g` -> w_A_g
+- `u113D0 w u113D0 g` -> w_A_g.under
+- `w u113D0 g U` -> w_A_g_U
+- `w u113D0 g u` -> w_A_g_u
+- `w u113D0 m` -> w_A_m
+- `u113D0 w u113D0 m` -> w_A_m.under
+- `w u113D0 m U` -> w_A_m_U
+- `w u113D0 m u` -> w_A_m_u
+- `u113D0 w u113D0 m u` -> w_A_m_u.under
+- `w u113D0 r` -> w_A_r
+- `u113D0 w u113D0 r` -> w_A_r.under
+- `w u113D0 r U` -> w_A_r_U
+- `u113D0 w u113D0 r U` -> w_A_r_U.under
+- `w u113D0 r u` -> w_A_r_u
+- `u113D0 w u113D0 r u` -> w_A_r_u.under
+- `w u113D0 t` -> w_A_t
+- `w u113D0 t u113D0 n` -> w_A_t_A_n
+- `w u113D0 t u113D0 r` -> w_A_t_A_r
+- `w u113D0 v` -> w_A_v
+- `u113D0 w u113D0 v` -> w_A_v.under
+- `w u113D0 v U` -> w_A_v_U
+- `w u113D0 v u` -> w_A_v_u
+- `u113D0 w u113D0 v u` -> w_A_v_u.under
+- `w u113D0 y` -> w_A_y
+- `u113D0 w u113D0 y` -> w_A_y.under
+- `w u113D0 y U` -> w_A_y_U
+- `w u113D0 y u` -> w_A_y_u
+- `u113D0 w u113D0 y u` -> w_A_y_u.under
+- `x u113D0 N` -> x_A_N
+- `x u113D0 N U` -> x_A_N_U
+- `x u113D0 N u` -> x_A_N_u
+- `x u113D0 Q` -> x_A_Q
+- `u113D0 x u113D0 Q` -> x_A_Q.under
+- `x u113D0 Q U` -> x_A_Q_U
+- `u113D0 x u113D0 Q U` -> x_A_Q_U.under
+- `x u113D0 Q u` -> x_A_Q_u
+- `u113D0 x u113D0 Q u` -> x_A_Q_u.under
+- `x u113D0 k` -> x_A_k
+- `u113D0 x u113D0 k` -> x_A_k.under
+- `x u113D0 k u113D0 r` -> x_A_k_A_r
+- `u113D0 x u113D0 k u113D0 r` -> x_A_k_A_r.under
+- `x u113D0 k u113D0 r U` -> x_A_k_A_r_U
+- `x u113D0 k R` -> x_A_k_R
+- `u113D0 x u113D0 k R` -> x_A_k_R.under
+- `x u113D0 k U` -> x_A_k_U
+- `u113D0 x u113D0 k U` -> x_A_k_U.under
+- `x u113D0 k u` -> x_A_k_u
+- `u113D0 x u113D0 k u` -> x_A_k_u.under
+- `x u113D0 m` -> x_A_m
+- `u113D0 x u113D0 m` -> x_A_m.under
+- `x u113D0 m U` -> x_A_m_U
+- `u113D0 x u113D0 m U` -> x_A_m_U.under
+- `x u113D0 m u` -> x_A_m_u
+- `u113D0 x u113D0 m u` -> x_A_m_u.under
+- `x u113D0 q` -> x_A_q
+- `u113D0 x u113D0 q` -> x_A_q.under
+- `x u113D0 q u113D0 r` -> x_A_q_A_r
+- `u113D0 x u113D0 q u113D0 r` -> x_A_q_A_r.under
+- `x u113D0 q u113D0 r U` -> x_A_q_A_r_U
+- `u113D0 x u113D0 q u113D0 r U` -> x_A_q_A_r_U.under
+- `x u113D0 q u113D0 r u` -> x_A_q_A_r_u
+- `u113D0 x u113D0 q u113D0 r u` -> x_A_q_A_r_u.under
+- `x u113D0 q u113D0 v` -> x_A_q_A_v
+- `u113D0 x u113D0 q u113D0 v` -> x_A_q_A_v.under
+- `x u113D0 q U` -> x_A_q_U
+- `u113D0 x u113D0 q U` -> x_A_q_U.under
+- `x u113D0 q u` -> x_A_q_u
+- `u113D0 x u113D0 q u` -> x_A_q_u.under
+- `y u113D0 d` -> y_A_d
+- `y u113D0 d U` -> y_A_d_U
+- `y u113D0 d u` -> y_A_d_u
+- `y u113D0 t` -> y_A_t
+- `y u113D0 t U` -> y_A_t_U
+- `y u113D0 t u` -> y_A_t_u
+- `y u113D0 y` -> y_A_y
+- `u113D0 y u113D0 y` -> y_A_y.under
+- `y u113D0 y U` -> y_A_y_U
+- `y u113D0 y u` -> y_A_y_u
+- `u113D0 y u113D0 y u` -> y_A_y_u.under
+- `z u113D0 c` -> z_A_c
+- `u113D0 z u113D0 c` -> z_A_c.under
+- `z u113D0 j` -> z_A_j
+- `u113D0 z u113D0 j` -> z_A_j.under
+- `z u113D0 j u113D0 y` -> z_A_j_A_y
+- `u113D0 z u113D0 j u113D0 y` -> z_A_j_A_y.under
+- `z u113D0 j u113D0 y U` -> z_A_j_A_y_U
+- `z u113D0 j u113D0 y u` -> z_A_j_A_y_u
+- `u113D0 z u113D0 j u113D0 y u` -> z_A_j_A_y_u.under
+- `z u113D0 j u113D0 z` -> z_A_j_A_z
+- `u113D0 z u113D0 j u113D0 z` -> z_A_j_A_z.under
+- `z u113D0 j u113D0 z U` -> z_A_j_A_z_U
+- `u113D0 z u113D0 j u113D0 z U` -> z_A_j_A_z_U.under
+- `z u113D0 j u113D0 z u` -> z_A_j_A_z_u
+- `u113D0 z u113D0 j u113D0 z u` -> z_A_j_A_z_u.under
+- `z u113D0 j U` -> z_A_j_U
+- `u113D0 z u113D0 j U` -> z_A_j_U.under
+- `z u113D0 j u` -> z_A_j_u
+- `u113D0 z u113D0 j u` -> z_A_j_u.under
+- `z u113D0 y` -> z_A_y
+- `u113D0 z u113D0 y` -> z_A_y.under
+- `z u113D0 y U` -> z_A_y_U
+- `z u113D0 y u` -> z_A_y_u
+- `u113D0 z u113D0 y u` -> z_A_y_u.under
+- `z u113D0 z` -> z_A_z
+- `u113D0 z u113D0 z` -> z_A_z.under
+- `z u113D0 z U` -> z_A_z_U
+- `u113D0 z u113D0 z U` -> z_A_z_U.under
+- `z u113D0 z u` -> z_A_z_u
+- `u113D0 z u113D0 z u` -> z_A_z_u.under
