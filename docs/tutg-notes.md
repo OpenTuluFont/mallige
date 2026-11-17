@@ -79,11 +79,11 @@ is a visible sign: KA + VIRAMA gives `k_A_X`, KA + VIRAMA + TA gives `k_A_X` + T
 
 ## 5. Not done, and why
 
-- **Gemination mark (113D2), pluta (113D3), Vedic tones (113E1, 113E2)**: need drawing.
+- **Vedic tones (113E1, 113E2)**: need drawing. (113D2 gemination mark, 113D3 pluta and the
+  dotted circle U+25CC are in v1.6: `tools/build_tutg.py`, drawn after the Unicode 16 chart; the
+  mark attaches below the base through `blwm`, and the USE order is consonant, mark, vowel sign.)
   The Unicode chart shows a small mark below, a "2"-like curl, a short slanted stroke above
   and a small hook below. Any of these can be added to the build as soon as a glyph exists.
-- **Dotted circle (U+25CC)**: HarfBuzz shows broken clusters (a sign with no base) with it
-  only when the font has one. Worth adding.
 - **Vowel signs stay spacing glyphs** (no GDEF mark class, no anchors). The design handles
   them by precomposed forms and kerning, and that renders correctly, so anchors are not
   needed for this font. Marking them as GDEF marks would make HarfBuzz zero their advance

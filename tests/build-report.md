@@ -1,12 +1,13 @@
 # build_tutg report
 
-- new glyphs: u113D0, u113D5
+- new glyphs: u113D0, u113D5, u113D2, u113D3, uni25CC
 - cmap retargeted to keyboard glyphs: 43 (11392->k 11393->K 11394->g 11395->G 11396->Z 11397->c 11398->C 11399->j 1139B->z 1139C->q 1139D->Q 1139E->w 1139F->W 113A0->N 113A1->t 113A2->T 113A3->d 113A4->D 113A5->n 113A6->p 113A7->P 113A8->b 113A9->B 113AA->m 113AB->y 113AC->r 113AD->l 113AE->v 113AF->S 113B0->x 113B1->s 113B2->h 113B3->L 113B8->a 113BB->u 113BC->U 113BD->R 113CA->F 113CC->M 113CD->H 113CE->A 113D1->f 113D4->period)
 - keyboard ligature rules read: 1527
 - translated: 1461 flat rules, 17 repha rules, 49 keyboard-only rules skipped
 - repha: 8 abvs rules, 8 blws rules, 1 unresolved
-- version set to 1.500
-- saved XmlAlieg(mallige)v1.5.ttf: 1793 glyphs
+- gemination mark: 1512 base glyphs in blwm
+- version set to 1.600
+- saved XmlAlieg(mallige)v1.6.ttf: 1796 glyphs
 
 ## Keyboard-only rules skipped
 

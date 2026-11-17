@@ -35,6 +35,14 @@ CASES = [
     ("ka danda double-danda",       "11392 113D4 0020 113D5"),
     ("k conj rra  (no rule: fallback)", "11392 113D0 113B4"),
     ("e ee ai o oo au  (letters)",  "1138A 1138B 1138E 1138F 11390 11391"),
+    # added with the gemination mark, pluta and dotted circle (v1.6)
+    ("kka  ka + gemination mark",   "11392 113D2"),
+    ("ktta  kta + gemination mark", "11392 113D0 113A1 113D2"),
+    ("kkau  ka + gemination + u",   "11392 113D2 113BB"),
+    ("a + pluta  (vowel letter)",   "11380 113D3"),
+    ("kaa + pluta",                 "11392 113B8 113D3"),
+    ("lone gemination: dotted circle", "113D2"),
+    ("lone pluta",                  "113D3"),
 ]
 
 out = sys.argv[1]; fonts = sys.argv[2:]

@@ -12,25 +12,30 @@ Output: the same font with a `tutg` script whose Unicode Tulu-Tigalari text shap
   1. cmap  - Tulu-Tigalari code points whose keyboard glyph has the same outline point at
              the keyboard glyph (kerning and ligatures reference those names); the missing
              conjoiner, repha, danda and double danda are added.
-  2. glyf  - new glyphs: conjoiner (empty) and double danda (two of the keyboard's full-stop
-             bar). The repha is the keyboard's 'f' tick, the danda its full stop.
+  2. glyf  - new glyphs: conjoiner (empty), double danda (two of the keyboard's full-stop
+             bar), gemination mark and pluta (drawn here after the Unicode 16 code chart,
+             stroked to the weight of the font) and the dotted circle U+25CC. The repha is
+             the keyboard's 'f' tick, the danda its full stop.
   3. GSUB  - script `tutg` (default language system):
              cjct : every keyboard ligature rule translated to Unicode input
                     ('A' -> CONJOINER, trailing 'A X' -> VIRAMA), one flat lookup, longest match
              abvs : repha forms, applied after the USE has moved the repha behind the base
              blws : repha form + vowel sign U/UU
              psts : a conjoiner that no rule consumed becomes the visible virama
-  4. GPOS  - script `tutg` sharing the existing `kern` feature.
+  4. GPOS  - script `tutg` sharing the existing `kern` feature, plus `blwm`: the gemination
+             mark (zero advance, GDEF mark) attaches centred under the consonant or cluster
+             before it; an attachment, not a pair adjustment, so it follows the kerning of a
+             vowel sign that comes after the mark.
   5. GDEF  - the new glyphs get a class.
 The DFLT/latn keyboard layout is left untouched.
 
 Usage: build_tutg.py IN.ttf OUT.ttf [--report REPORT.md]
 """
-import re, copy, argparse
+import re, copy, math, argparse
 from fontTools.ttLib import TTFont
 from fontTools.ttLib.tables import otTables as ot
 from fontTools.ttLib.tables._g_l_y_f import Glyph
-from fontTools.otlLib.builder import LigatureSubstBuilder, SingleSubstBuilder
+from fontTools.otlLib.builder import LigatureSubstBuilder, SingleSubstBuilder, MarkBasePosBuilder, buildAnchor
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.pens.transformPen import TransformPen
 
@@ -42,6 +47,65 @@ font = TTFont(args.src)
 glyf, hmtx, cmap = font["glyf"], font["hmtx"], font["cmap"]
 report = []
 def log(s): report.append(s); print(s)
+
+
+# ---------------------------------------------------------------- drawn glyphs
+STROKE = 76   # letter strokes run about 80, the danda bar is 72
+
+def bezier(p0, p1, p2, p3, n):
+    return [tuple((1-t)**3*a + 3*(1-t)**2*t*b + 3*(1-t)*t**2*c + t**3*d for a, b, c, d in zip(p0, p1, p2, p3))
+            for t in (i / n for i in range(n + 1))]
+
+def stroked(path, width=STROKE, step=26):
+    """Outline of a round-capped stroke along a polyline, as one closed contour of off-curve
+    points (TrueType reads them as a smooth quadratic spline)."""
+    pts = [path[0]]
+    for q in path[1:]:
+        d = math.dist(pts[-1], q)
+        if d >= step * 0.6: pts.append(q)
+    h = width / 2
+    def normal(i):
+        a, b = pts[max(i - 1, 0)], pts[min(i + 1, len(pts) - 1)]
+        d = math.dist(a, b); return (-(b[1] - a[1]) / d, (b[0] - a[0]) / d)
+    left = [(x + h * normal(i)[0], y + h * normal(i)[1]) for i, (x, y) in enumerate(pts)]
+    right = [(x - h * normal(i)[0], y - h * normal(i)[1]) for i, (x, y) in enumerate(pts)]
+    def cap(c, n, a_start):
+        a0 = math.atan2(n[1], n[0]) + a_start
+        return [(c[0] + h * math.cos(a0 - math.pi * k / 6), c[1] + h * math.sin(a0 - math.pi * k / 6)) for k in range(1, 6)]
+    return left + cap(pts[-1], normal(len(pts) - 1), 0) + right[::-1] + cap(pts[0], normal(0), math.pi)
+
+def draw_contours(contours):
+    pen = TTGlyphPen(None)
+    for c in contours:
+        area = sum(x0 * y1 - x1 * y0 for (x0, y0), (x1, y1) in zip(c, c[1:] + c[:1]))
+        if area > 0: c = c[::-1]   # outer contours run clockwise
+        pen.qCurveTo(*[(round(x), round(y)) for x, y in c], None); pen.closePath()
+    return pen.glyph()
+
+def circle_contour(cx, cy, r, n=8):
+    k = r / math.cos(math.pi / n)
+    return [(cx + k * math.cos(2 * math.pi * (i + .5) / n), cy + k * math.sin(2 * math.pi * (i + .5) / n)) for i in range(n)]
+
+def pluta_glyph():
+    # the "2"-like curl of the code chart: hook to the right, back to the left, long diagonal down
+    s = 560 / 360
+    def P(x, y): return ((x - 99) * s + 30, (425 - y) * s)
+    segs = [((112, 98), (160, 75), (235, 65), (250, 105)), ((250, 105), (262, 150), (170, 175), (130, 210)),
+            ((130, 210), (112, 225), (115, 240), (130, 262)), ((130, 262), (180, 320), (230, 365), (278, 415))]
+    path = []
+    for sg in segs: path += bezier(*[P(*p) for p in sg], 14)[:-1]
+    path.append(P(*segs[-1][-1]))
+    return draw_contours([stroked(path)]), 360
+
+def gemination_glyph():
+    # small arch below the consonant, centred on x = 0, zero advance
+    rx, ry, cy = 92, 72, -150
+    path = [(rx * math.cos(a), cy + ry * math.sin(a)) for a in (math.pi - math.pi * i / 24 for i in range(25))]
+    return draw_contours([stroked(path)]), 0
+
+def dotted_circle_glyph():
+    r, cx, cy, dot = 215, 290, 275, 33
+    return draw_contours([circle_contour(cx + r * math.cos(2 * math.pi * i / 12), cy + r * math.sin(2 * math.pi * i / 12), dot) for i in range(12)]), 580
 
 # ---------------------------------------------------------------- 1. keyboard key -> code point
 # Verified by outline identity (tools/match_hack.py) or by eye on the contact sheets.
@@ -69,7 +133,11 @@ KEY_TO_CP = {
 NEW = {  # code point -> (glyph name, source)
     0x113D0: ("u113D0", "empty"),          # CONJOINER
     0x113D5: ("u113D5", "dandadouble"),    # DOUBLE DANDA = two dandas
+    0x113D2: ("u113D2", "gemination"),     # GEMINATION MARK, drawn
+    0x113D3: ("u113D3", "pluta"),          # SIGN PLUTA, drawn
+    0x25CC:  ("uni25CC", "dottedcircle"),  # DOTTED CIRCLE, drawn
 }
+DRAWN = {"gemination": gemination_glyph, "pluta": pluta_glyph, "dottedcircle": dotted_circle_glyph}
 
 def add_glyph(name, glyph, adv, lsb):
     glyf[name] = glyph; hmtx[name] = (adv, lsb)   # glyf appends the name to the shared glyph order
@@ -82,6 +150,8 @@ for cp, (name, src) in NEW.items():
         pen = TTGlyphPen(font.getGlyphSet()); gs = font.getGlyphSet(); w = hmtx["period"][0]
         gs["period"].draw(pen); gs["period"].draw(TransformPen(pen, (1, 0, 0, 1, w, 0)))
         add_glyph(name, pen.glyph(), 2 * w, hmtx["period"][1])
+    elif src in DRAWN:
+        g, adv = DRAWN[src](); g.recalcBounds(glyf); add_glyph(name, g, adv, g.xMin)
     else:
         add_glyph(name, copy.deepcopy(glyf[src]), *hmtx[src])
 order = list(glyf.glyphOrder)
@@ -98,7 +168,7 @@ for table in cmap.tables:
         table.cmap[cp] = key
         if old != key and table.format == 12: retargeted.append(f"{cp:04X}->{key}")
     for cp, (name, _) in NEW.items():
-        if table.format == 12: table.cmap[cp] = name
+        if table.format == 12 or cp <= 0xFFFF: table.cmap[cp] = name
 log(f"cmap retargeted to keyboard glyphs: {len(retargeted)} ({' '.join(retargeted)})")
 umap = font.getBestCmap()
 def G(cp): return umap[cp]
@@ -220,13 +290,28 @@ sort_features(gsub)
 # ---------------------------------------------------------------- 5. GPOS: tutg shares kern
 gpos = font["GPOS"].table
 dflt = next(s for s in gpos.ScriptList.ScriptRecord if s.ScriptTag == "DFLT")
-add_script(gpos, "tutg", dflt.Script.DefaultLangSys.FeatureIndex)
+bases = {G(cp) for cp in KEY_TO_CP.values() if 0x11392 <= cp <= 0x113B3} | {G(0x1139A), "uni25CC"} | set(flat.values()) | set(abvs.values()) | set(blws.values())
+mb = MarkBasePosBuilder(font, None)
+mb.marks["u113D2"] = ("below", buildAnchor(0, 0))
+for b in sorted(bases):
+    g = glyf[b]
+    if g.numberOfContours == 0: continue
+    g.recalcBounds(glyf)
+    mb.bases[b] = {"below": buildAnchor(round((g.xMin + g.xMax) / 2), 0)}
+gl = gpos.LookupList; gl.Lookup.append(mb.build()); gl.LookupCount = len(gl.Lookup)
+fr = ot.FeatureRecord(); fr.FeatureTag = "blwm"
+fr.Feature = ot.Feature(); fr.Feature.FeatureParams = None
+fr.Feature.LookupListIndex = [gl.LookupCount - 1]; fr.Feature.LookupCount = 1
+gpos.FeatureList.FeatureRecord.append(fr); gpos.FeatureList.FeatureCount = len(gpos.FeatureList.FeatureRecord)
+add_script(gpos, "tutg", list(dflt.Script.DefaultLangSys.FeatureIndex) + [gpos.FeatureList.FeatureCount - 1])
+sort_features(gpos)
+log(f"gemination mark: {len(bases)} base glyphs in blwm")
 
 # ---------------------------------------------------------------- 6. GDEF
 gdef = font["GDEF"].table
 cd = gdef.GlyphClassDef.classDefs
 for cp, (name, src) in NEW.items():
-    cd[name] = 0 if src == "empty" else 1
+    cd[name] = 0 if src == "empty" else 3 if src == "gemination" else 1
 for lig in set(flat.values()) | set(abvs.values()) | set(blws.values()):
     cd.setdefault(lig, 2)
 
